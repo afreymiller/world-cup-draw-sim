@@ -1,0 +1,148 @@
+<html>
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.10/vue.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vuex/2.1.1/vuex.min.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <button v-on:click="buttonClick">Simulate Draw</button>
+      <div class = "groupA">
+          <p>{{ A1 }}</p>
+          <p>{{ A2 }}</p>
+          <p>{{ A3 }}</p>
+          <p>{{ A4 }}</p>
+      </div>
+      <div class = "groupB">
+          <p>{{ B1 }}</p>
+          <p>{{ B2 }}</p>
+          <p>{{ B3 }}</p>
+          <p>{{ B4 }}</p>
+      </div>
+      <div class = "groupC">
+          <p>{{ C1 }}</p>
+          <p>{{ C2 }}</p>
+          <p>{{ C3 }}</p>
+          <p>{{ C4 }}</p>
+      </div>
+      <div class = "groupD">
+          <p>{{ D1 }}</p>
+          <p>{{ D2 }}</p>
+          <p>{{ D3 }}</p>
+          <p>{{ D4 }}</p>
+      </div>
+      <div class = "groupE">
+          <p>{{ E1 }}</p>
+          <p>{{ E2 }}</p>
+          <p>{{ E3 }}</p>
+          <p>{{ E4 }}</p>
+      </div>
+      <div class = "groupF">
+          <p>{{ F1 }}</p>
+          <p>{{ F2 }}</p>
+          <p>{{ F3 }}</p>
+          <p>{{ F4 }}</p>
+      </div>
+      <div class = "groupG">
+          <p>{{ G1 }}</p>
+          <p>{{ G2 }}</p>
+          <p>{{ G3 }}</p>
+          <p>{{ G4 }}</p>
+      </div>
+      <div class = "groupH">
+          <p>{{ H1 }}</p>
+          <p>{{ H2 }}</p>
+          <p>{{ H3 }}</p>
+          <p>{{ H4 }}</p>
+      </div>
+    </div>
+    <script type="text/javascript">
+      new Vue(
+        {
+          'el': '#app',
+          'data': {
+              'A1': "A1", 
+              'A2': "A2",
+              'A3': "A3",
+              'A4': "A4",
+              'B1': "B1",
+              'B2': "B2",
+              'B3': "B3",
+              'B4': "B4",
+              'C1': "C1",
+              'C2': "C2",
+              'C3': "C3",
+              'C4': "C4",
+              'D1': "D1",
+              'D2': "D2",
+              'D3': "D3",
+              'D4': "D4",
+              'E1': "E1",
+              'E2': "E2",
+              'E3': "E3",
+              'E4': "E4",
+              'F1': "F1",
+              'F2': "F2",
+              'F3': "F3",
+              'F4': "F4",
+              'G1': "G1",
+              'G2': "G2",
+              'G3': "G3",
+              'G4': "G4",
+              'H1': "H1",
+              'H2': "H2",
+              'H3': "H3",
+              'H4': "H4",
+              'Pot1': ["GER", "ARG", "BRA", "POR", "SUI", "POL", "CHI", "RUS"],
+              'Pot2': ["DRC", "NGA", "CIV", "BUR", "EGP", "URU", "COL", "IRE"],
+              'Pot3': ["MEX", "CRC", "USA", "AUS", "IRN", "KOR", "JPN", "KSA"],
+              'Pot4': ["SWE", "SER", "ENG", "FRA", "ESP", "BEL", "CRO", "GRE"]
+          }, 
+          'methods': {
+            'buttonClick': function() {
+                this.A1 = this.Pot1.splice(Math.floor(Math.random()*this.Pot1.length), 1);
+                this.A2 = this.Pot2.splice(Math.floor(Math.random()*this.Pot2.length), 1);
+                this.A3 = this.Pot3.splice(Math.floor(Math.random()*this.Pot3.length), 1);
+                this.A4 = this.Pot4.splice(Math.floor(Math.random()*this.Pot4.length), 1);
+
+                this.B1 = this.Pot1.splice(Math.floor(Math.random()*this.Pot1.length), 1);
+                this.B2 = this.Pot2.splice(Math.floor(Math.random()*this.Pot2.length), 1);
+                this.B3 = this.Pot3.splice(Math.floor(Math.random()*this.Pot3.length), 1);
+                this.B4 = this.Pot4.splice(Math.floor(Math.random()*this.Pot4.length), 1);
+
+                this.C1 = this.Pot1.splice(Math.floor(Math.random()*this.Pot1.length), 1);
+                this.C2 = this.Pot2.splice(Math.floor(Math.random()*this.Pot2.length), 1);
+                this.C3 = this.Pot3.splice(Math.floor(Math.random()*this.Pot3.length), 1);
+                this.C4 = this.Pot4.splice(Math.floor(Math.random()*this.Pot4.length), 1);
+
+                this.D1 = this.Pot1.splice(Math.floor(Math.random()*this.Pot1.length), 1);
+                this.D2 = this.Pot2.splice(Math.floor(Math.random()*this.Pot2.length), 1);
+                this.D3 = this.Pot3.splice(Math.floor(Math.random()*this.Pot3.length), 1);
+                this.D4 = this.Pot4.splice(Math.floor(Math.random()*this.Pot4.length), 1);
+
+                this.E1 = this.Pot1.splice(Math.floor(Math.random()*this.Pot1.length), 1);
+                this.E2 = this.Pot2.splice(Math.floor(Math.random()*this.Pot2.length), 1);
+                this.E3 = this.Pot3.splice(Math.floor(Math.random()*this.Pot3.length), 1);
+                this.E4 = this.Pot4.splice(Math.floor(Math.random()*this.Pot4.length), 1);
+
+                this.F1 = this.Pot1.splice(Math.floor(Math.random()*this.Pot1.length), 1);
+                this.F2 = this.Pot2.splice(Math.floor(Math.random()*this.Pot2.length), 1);
+                this.F3 = this.Pot3.splice(Math.floor(Math.random()*this.Pot3.length), 1);
+                this.F4 = this.Pot4.splice(Math.floor(Math.random()*this.Pot4.length), 1);
+
+                this.G1 = this.Pot1.splice(Math.floor(Math.random()*this.Pot1.length), 1);
+                this.G2 = this.Pot2.splice(Math.floor(Math.random()*this.Pot2.length), 1);
+                this.G3 = this.Pot3.splice(Math.floor(Math.random()*this.Pot3.length), 1);
+                this.G4 = this.Pot4.splice(Math.floor(Math.random()*this.Pot4.length), 1);
+
+                this.H1 = this.Pot1.splice(Math.floor(Math.random()*this.Pot1.length), 1);
+                this.H2 = this.Pot2.splice(Math.floor(Math.random()*this.Pot2.length), 1);
+                this.H3 = this.Pot3.splice(Math.floor(Math.random()*this.Pot3.length), 1);
+                this.H4 = this.Pot4.splice(Math.floor(Math.random()*this.Pot4.length), 1);
+
+            }
+          }
+        }
+      )
+    </script>
+  </body>
+</html>
