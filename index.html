@@ -98,47 +98,87 @@
               'Pot4': ["SWE", "SER", "ENG", "FRA", "ESP", "BEL", "CRO", "GRE"]
           }, 
           'methods': {
-            'buttonClick': function() {
-                this.A1 = this.Pot1.splice(Math.floor(Math.random()*this.Pot1.length), 1);
-                this.A2 = this.Pot2.splice(Math.floor(Math.random()*this.Pot2.length), 1);
-                this.A3 = this.Pot3.splice(Math.floor(Math.random()*this.Pot3.length), 1);
-                this.A4 = this.Pot4.splice(Math.floor(Math.random()*this.Pot4.length), 1);
-
-                this.B1 = this.Pot1.splice(Math.floor(Math.random()*this.Pot1.length), 1);
-                this.B2 = this.Pot2.splice(Math.floor(Math.random()*this.Pot2.length), 1);
-                this.B3 = this.Pot3.splice(Math.floor(Math.random()*this.Pot3.length), 1);
-                this.B4 = this.Pot4.splice(Math.floor(Math.random()*this.Pot4.length), 1);
-
-                this.C1 = this.Pot1.splice(Math.floor(Math.random()*this.Pot1.length), 1);
-                this.C2 = this.Pot2.splice(Math.floor(Math.random()*this.Pot2.length), 1);
-                this.C3 = this.Pot3.splice(Math.floor(Math.random()*this.Pot3.length), 1);
-                this.C4 = this.Pot4.splice(Math.floor(Math.random()*this.Pot4.length), 1);
-
-                this.D1 = this.Pot1.splice(Math.floor(Math.random()*this.Pot1.length), 1);
-                this.D2 = this.Pot2.splice(Math.floor(Math.random()*this.Pot2.length), 1);
-                this.D3 = this.Pot3.splice(Math.floor(Math.random()*this.Pot3.length), 1);
-                this.D4 = this.Pot4.splice(Math.floor(Math.random()*this.Pot4.length), 1);
-
-                this.E1 = this.Pot1.splice(Math.floor(Math.random()*this.Pot1.length), 1);
-                this.E2 = this.Pot2.splice(Math.floor(Math.random()*this.Pot2.length), 1);
-                this.E3 = this.Pot3.splice(Math.floor(Math.random()*this.Pot3.length), 1);
-                this.E4 = this.Pot4.splice(Math.floor(Math.random()*this.Pot4.length), 1);
-
-                this.F1 = this.Pot1.splice(Math.floor(Math.random()*this.Pot1.length), 1);
-                this.F2 = this.Pot2.splice(Math.floor(Math.random()*this.Pot2.length), 1);
-                this.F3 = this.Pot3.splice(Math.floor(Math.random()*this.Pot3.length), 1);
-                this.F4 = this.Pot4.splice(Math.floor(Math.random()*this.Pot4.length), 1);
-
-                this.G1 = this.Pot1.splice(Math.floor(Math.random()*this.Pot1.length), 1);
-                this.G2 = this.Pot2.splice(Math.floor(Math.random()*this.Pot2.length), 1);
-                this.G3 = this.Pot3.splice(Math.floor(Math.random()*this.Pot3.length), 1);
-                this.G4 = this.Pot4.splice(Math.floor(Math.random()*this.Pot4.length), 1);
-
-                this.H1 = this.Pot1.splice(Math.floor(Math.random()*this.Pot1.length), 1);
-                this.H2 = this.Pot2.splice(Math.floor(Math.random()*this.Pot2.length), 1);
-                this.H3 = this.Pot3.splice(Math.floor(Math.random()*this.Pot3.length), 1);
-                this.H4 = this.Pot4.splice(Math.floor(Math.random()*this.Pot4.length), 1);
-
+            'fillGroup': function(group)
+            {
+                switch(group)
+                {
+                    case "A":
+                        this.A1 = this.popTeam("Pot1");
+                        this.A2 = this.popTeam("Pot2");
+                        this.A3 = this.popTeam("Pot3");
+                        this.A4 = this.popTeam("Pot4");
+                        break;
+                    case "B":
+                        this.B1 = this.popTeam("Pot1");
+                        this.B2 = this.popTeam("Pot2");
+                        this.B3 = this.popTeam("Pot3");
+                        this.B4 = this.popTeam("Pot4");
+                        break;
+                    case "C":
+                        this.C1 = this.popTeam("Pot1");
+                        this.C2 = this.popTeam("Pot2");
+                        this.C3 = this.popTeam("Pot3");
+                        this.C4 = this.popTeam("Pot4");
+                        break;
+                    case "D":
+                        this.D1 = this.popTeam("Pot1");
+                        this.D2 = this.popTeam("Pot2");
+                        this.D3 = this.popTeam("Pot3");
+                        this.D4 = this.popTeam("Pot4");
+                        break;
+                    case "E":
+                        this.E1 = this.popTeam("Pot1");
+                        this.E2 = this.popTeam("Pot2");
+                        this.E3 = this.popTeam("Pot3");
+                        this.E4 = this.popTeam("Pot4");
+                        break;
+                    case "F":
+                        this.F1 = this.popTeam("Pot1");
+                        this.F2 = this.popTeam("Pot2");
+                        this.F3 = this.popTeam("Pot3");
+                        this.F4 = this.popTeam("Pot4");
+                        break;
+                    case "G":
+                        this.G1 = this.popTeam("Pot1");
+                        this.G2 = this.popTeam("Pot2");
+                        this.G3 = this.popTeam("Pot3");
+                        this.G4 = this.popTeam("Pot4");
+                        break;
+                    case "H":
+                        this.H1 = this.popTeam("Pot1");
+                        this.H2 = this.popTeam("Pot2");
+                        this.H3 = this.popTeam("Pot3");
+                        this.H4 = this.popTeam("Pot4");
+                        break;
+                    
+                }
+            },
+            'popTeam': function(pot) 
+            {
+                switch (pot)
+                {
+                    case "Pot1":
+                        return this.Pot1.splice(Math.floor(Math.random()*this.Pot1.length), 1);
+                    case "Pot2":
+                        return this.Pot2.splice(Math.floor(Math.random()*this.Pot2.length), 1);
+                    case "Pot3":
+                        return this.Pot3.splice(Math.floor(Math.random()*this.Pot3.length), 1);
+                    case "Pot4":
+                        return this.Pot4.splice(Math.floor(Math.random()*this.Pot4.length), 1);
+                    default:
+                        break;
+                }
+            },
+            'buttonClick': function() 
+            {
+                this.fillGroup("A");
+                this.fillGroup("B");
+                this.fillGroup("C");
+                this.fillGroup("D");
+                this.fillGroup("E");
+                this.fillGroup("F");
+                this.fillGroup("G");
+                this.fillGroup("H");
             }
           }
         }
