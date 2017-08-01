@@ -1,5 +1,6 @@
 <html>
   <head>
+    <!-- these scripts should be loaded in some way other than CDNs -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.10/vue.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vuex/2.1.1/vuex.min.js"></script>
   </head>
@@ -59,6 +60,7 @@
       new Vue(
         {
           'el': '#app',
+          /* Labels and team names should be loaded from database */
           'data': {
               'A1': "A1", 
               'A2': "A2",
@@ -179,6 +181,11 @@
                 this.fillGroup("F");
                 this.fillGroup("G");
                 this.fillGroup("H");
+
+                this.Pot1 = ["GER", "ARG", "BRA", "POR", "SUI", "POL", "CHI", "RUS"],
+                this.Pot2 = ["DRC", "NGA", "CIV", "BUR", "EGP", "URU", "COL", "IRE"],
+                this.Pot3 = ["MEX", "CRC", "USA", "AUS", "IRN", "KOR", "JPN", "KSA"],
+                this.Pot4 = ["SWE", "SER", "ENG", "FRA", "ESP", "BEL", "CRO", "GRE"]
             }
           }
         }
