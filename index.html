@@ -1,24 +1,66 @@
 <html>
   <head>
     <!-- these scripts should be loaded in some way other than CDNs -->
+    <link rel = "stylesheet" type = "text/css" href = "style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.10/vue.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vuex/2.1.1/vuex.min.js"></script>
   </head>
   <body>
     <div id="app">
-      <button v-on:click="buttonClick">Simulate Draw</button>
-      <div class = "groupA">
-          <p>{{ A1 }}</p>
-          <p>{{ A2 }}</p>
-          <p>{{ A3 }}</p>
-          <p>{{ A4 }}</p>
-      </div>
+        <button v-on:click="buttonClick">Simulate Draw</button>
+        <div class="div-table">
+            <div class="div-table-row">
+                <div class="div-table-col" align="center">Group A</div>
+            </div>
+            <div class="div-table-row">
+                <div class="div-table-col">{{A1}}</div>
+            </div>
+            <div class="div-table-row">
+                <div class="div-table-col">{{A2}}</div>
+            </div>
+            <div class="div-table-row">
+                <div class="div-table-col">{{A3}}</div>
+            </div>
+            <div class="div-table-row">
+                <div class="div-table-col">{{A4}}</div>
+            </div>
+        </div>
+        <div class="div-table">
+            <div class="div-table-row">
+                <div class="div-table-col" align="center">Customer ID</div>
+            </div>
+            <div class="div-table-row">
+                <div class="div-table-col">001</div>
+            </div>
+            <div class="div-table-row">
+                <div class="div-table-col">xxx</div>
+            </div>
+            <div class="div-table-row">
+                <div class="div-table-col">ttt</div>
+            </div>
+        </div>
+        <div class="div-table">
+            <div class="div-table-row">
+                <div class="div-table-col" align="center">Customer ID</div>
+            </div>
+            <div class="div-table-row">
+                <div class="div-table-col">001</div>
+            </div>
+            <div class="div-table-row">
+                <div class="div-table-col">xxx</div>
+            </div>
+            <div class="div-table-row">
+                <div class="div-table-col">ttt</div>
+            </div>
+        </div>
+      <hr>
       <div class = "groupB">
           <p>{{ B1 }}</p>
           <p>{{ B2 }}</p>
           <p>{{ B3 }}</p>
           <p>{{ B4 }}</p>
       </div>
+      <hr>
       <div class = "groupC">
           <p>{{ C1 }}</p>
           <p>{{ C2 }}</p>
@@ -105,7 +147,7 @@
                 switch(group)
                 {
                     case "A":
-                        this.A1 = this.popTeam("Pot1");
+                        this.A1 = (this.popTeam("Pot1"))[0];
                         this.A2 = this.popTeam("Pot2");
                         this.A3 = this.popTeam("Pot3");
                         this.A4 = this.popTeam("Pot4");
