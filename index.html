@@ -6,42 +6,65 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vuex/2.1.1/vuex.min.js"></script>
   </head>
   <body>
+    <div class="grid-container outline">
+        <div class="row">
+            <div class="col-1"><p>col-1</p></div> 
+            <div class="col-1"><p>col-1</p></div> 
+            <div class="col-1"><p>col-1</p></div> 
+            <div class="col-1"><p>col-1</p></div> 
+            <div class="col-1"><p>col-1</p></div> 
+            <div class="col-1"><p>col-1</p></div> 
+        </div> 
+        <div class="row">
+            <div class="col-1">
+                <div class="div-table">
+                    <div class="div-table-row">
+                        <div class="div-table-col" align="center">Group A</div>
+                    </div>
+                    <div class="div-table-row">
+                        <div class="div-table-col">{{A1}}</div>
+                    </div>
+                    <div class="div-table-row">
+                        <div class="div-table-col">{{A2}}</div>
+                    </div>
+                    <div class="div-table-row">
+                        <div class="div-table-col">{{A3}}</div>
+                    </div>
+                    <div class="div-table-row">
+                        <div class="div-table-col">{{A4}}</div>
+                    </div>
+                </div>
+            </div> 
+            <div class="col-1">
+                <div class="div-table">
+                    <div class="div-table-row">
+                        <div class="div-table-col" align="center">Group B</div>
+                    </div>
+                    <div class="div-table-row">
+                        <div class="div-table-col">{{B1}}</div>
+                    </div>
+                    <div class="div-table-row">
+                        <div class="div-table-col">{{B2}}</div>
+                    </div>
+                    <div class="div-table-row">
+                        <div class="div-table-col">{{B3}}</div>
+                    </div>
+                    <div class="div-table-row">
+                        <div class="div-table-col">{{B4}}</div>
+                    </div>
+                </div>
+            </div> 
+            <div class="col-2"><p>col-2</p></div> 
+        </div> 
+        <div class="row">
+            <div class="col-3"><p>col-3</p></div> 
+            <div class="col-3"><p>col-3</p></div> 
+        </div> 
+    </div>
     <div id="app">
         <button v-on:click="buttonClick">Simulate Draw</button>
-        <div class="div-table">
-            <div class="div-table-row">
-                <div class="div-table-col" align="center">Group A</div>
-            </div>
-            <div class="div-table-row">
-                <div class="div-table-col">{{A1}}</div>
-            </div>
-            <div class="div-table-row">
-                <div class="div-table-col">{{A2}}</div>
-            </div>
-            <div class="div-table-row">
-                <div class="div-table-col">{{A3}}</div>
-            </div>
-            <div class="div-table-row">
-                <div class="div-table-col">{{A4}}</div>
-            </div>
-        </div>
-        <div class="div-table">
-            <div class="div-table-row">
-                <div class="div-table-col" align="center">Group B</div>
-            </div>
-            <div class="div-table-row">
-                <div class="div-table-col">{{B1}}</div>
-            </div>
-            <div class="div-table-row">
-                <div class="div-table-col">{{B2}}</div>
-            </div>
-            <div class="div-table-row">
-                <div class="div-table-col">{{B3}}</div>
-            </div>
-            <div class="div-table-row">
-                <div class="div-table-col">{{B4}}</div>
-            </div>
-        </div>
+        
+        
         <div class="div-table">
             <div class="div-table-row">
                 <div class="div-table-col" align="center">Group C</div>
