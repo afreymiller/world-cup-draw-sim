@@ -6,166 +6,165 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vuex/2.1.1/vuex.min.js"></script>
   </head>
   <body>
-    <div class="grid-container outline">
-        <div class="row">
-            <div class="col-1"><p>col-1</p></div> 
-            <div class="col-1"><p>col-1</p></div> 
-            <div class="col-1"><p>col-1</p></div> 
-            <div class="col-1"><p>col-1</p></div> 
-            <div class="col-1"><p>col-1</p></div> 
-            <div class="col-1"><p>col-1</p></div> 
-        </div> 
-        <div class="row">
-            <div class="col-1">
-                <div class="div-table">
-                    <div class="div-table-row">
-                        <div class="div-table-col" align="center">Group A</div>
-                    </div>
-                    <div class="div-table-row">
-                        <div class="div-table-col">{{A1}}</div>
-                    </div>
-                    <div class="div-table-row">
-                        <div class="div-table-col">{{A2}}</div>
-                    </div>
-                    <div class="div-table-row">
-                        <div class="div-table-col">{{A3}}</div>
-                    </div>
-                    <div class="div-table-row">
-                        <div class="div-table-col">{{A4}}</div>
-                    </div>
-                </div>
-            </div> 
-            <div class="col-1">
-                <div class="div-table">
-                    <div class="div-table-row">
-                        <div class="div-table-col" align="center">Group B</div>
-                    </div>
-                    <div class="div-table-row">
-                        <div class="div-table-col">{{B1}}</div>
-                    </div>
-                    <div class="div-table-row">
-                        <div class="div-table-col">{{B2}}</div>
-                    </div>
-                    <div class="div-table-row">
-                        <div class="div-table-col">{{B3}}</div>
-                    </div>
-                    <div class="div-table-row">
-                        <div class="div-table-col">{{B4}}</div>
-                    </div>
-                </div>
-            </div> 
-            <div class="col-2"><p>col-2</p></div> 
-        </div> 
-        <div class="row">
-            <div class="col-3"><p>col-3</p></div> 
-            <div class="col-3"><p>col-3</p></div> 
-        </div> 
-    </div>
     <div id="app">
         <button v-on:click="buttonClick">Simulate Draw</button>
-        
-        
-        <div class="div-table">
-            <div class="div-table-row">
-                <div class="div-table-col" align="center">Group C</div>
+        <div class="grid-container outline">
+            <div class="row">
+                <div class="col-1">
+                    <div class="div-table">
+                        <div class="div-table-row">
+                            <div class="div-table-col" align="center">Group A</div>
+                        </div>
+                        <div class="div-table-row">
+                            <div class="div-table-col">{{A1}}</div>
+                        </div>
+                        <div class="div-table-row">
+                            <div class="div-table-col">{{A2}}</div>
+                        </div>
+                        <div class="div-table-row">
+                            <div class="div-table-col">{{A3}}</div>
+                        </div>
+                        <div class="div-table-row">
+                            <div class="div-table-col">{{A4}}</div>
+                        </div>
+                    </div>
+                </div> 
+                <div class="col-1">
+                    <div class="div-table">
+                        <div class="div-table-row">
+                            <div class="div-table-col" align="center">Group B</div>
+                        </div>
+                        <div class="div-table-row">
+                            <div class="div-table-col">{{B1}}</div>
+                        </div>
+                        <div class="div-table-row">
+                            <div class="div-table-col">{{B2}}</div>
+                        </div>
+                        <div class="div-table-row">
+                            <div class="div-table-col">{{B3}}</div>
+                        </div>
+                        <div class="div-table-row">
+                            <div class="div-table-col">{{B4}}</div>
+                        </div>
+                    </div>
+                </div> 
+                <div class="col-1">
+                    <div class="div-table">
+                        <div class="div-table-row">
+                            <div class="div-table-col" align="center">Group C</div>
+                        </div>
+                        <div class="div-table-row">
+                            <div class="div-table-col">{{C1}}</div>
+                        </div>
+                        <div class="div-table-row">
+                            <div class="div-table-col">{{C2}}</div>
+                        </div>
+                        <div class="div-table-row">
+                            <div class="div-table-col">{{C3}}</div>
+                        </div>
+                        <div class="div-table-row">
+                            <div class="div-table-col">{{C4}}</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-1">
+                    <div class="div-table">
+                        <div class="div-table-row">
+                            <div class="div-table-col" align="center">Group D</div>
+                        </div>
+                        <div class="div-table-row">
+                            <div class="div-table-col">{{D1}}</div>
+                        </div>
+                        <div class="div-table-row">
+                            <div class="div-table-col">{{D2}}</div>
+                        </div>
+                        <div class="div-table-row">
+                            <div class="div-table-col">{{D3}}</div>
+                        </div>
+                        <div class="div-table-row">
+                            <div class="div-table-col">{{D4}}</div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="div-table-row">
-                <div class="div-table-col">{{C1}}</div>
-            </div>
-            <div class="div-table-row">
-                <div class="div-table-col">{{C2}}</div>
-            </div>
-            <div class="div-table-row">
-                <div class="div-table-col">{{C3}}</div>
-            </div>
-            <div class="div-table-row">
-                <div class="div-table-col">{{C4}}</div>
-            </div>
-        </div>
-        <div class="div-table">
-            <div class="div-table-row">
-                <div class="div-table-col" align="center">Group D</div>
-            </div>
-            <div class="div-table-row">
-                <div class="div-table-col">{{D1}}</div>
-            </div>
-            <div class="div-table-row">
-                <div class="div-table-col">{{D2}}</div>
-            </div>
-            <div class="div-table-row">
-                <div class="div-table-col">{{D3}}</div>
-            </div>
-            <div class="div-table-row">
-                <div class="div-table-col">{{D4}}</div>
-            </div>
-        </div>
-        <div class="div-table">
-            <div class="div-table-row">
-                <div class="div-table-col" align="center">Group E</div>
-            </div>
-            <div class="div-table-row">
-                <div class="div-table-col">{{E1}}</div>
-            </div>
-            <div class="div-table-row">
-                <div class="div-table-col">{{E2}}</div>
-            </div>
-            <div class="div-table-row">
-                <div class="div-table-col">{{E3}}</div>
-            </div>
-            <div class="div-table-row">
-                <div class="div-table-col">{{E4}}</div>
-            </div>
-        </div>
-        <div class="div-table">
-            <div class="div-table-row">
-                <div class="div-table-col" align="center">Group F</div>
-            </div>
-            <div class="div-table-row">
-                <div class="div-table-col">{{F1}}</div>
-            </div>
-            <div class="div-table-row">
-                <div class="div-table-col">{{F2}}</div>
-            </div>
-            <div class="div-table-row">
-                <div class="div-table-col">{{F3}}</div>
-            </div>
-            <div class="div-table-row">
-                <div class="div-table-col">{{F4}}</div>
-            </div>
-        </div>
-        <div class="div-table">
-            <div class="div-table-row">
-                <div class="div-table-col" align="center">Group G</div>
-            </div>
-            <div class="div-table-row">
-                <div class="div-table-col">{{G1}}</div>
-            </div>
-            <div class="div-table-row">
-                <div class="div-table-col">{{G2}}</div>
-            </div>
-            <div class="div-table-row">
-                <div class="div-table-col">{{G3}}</div>
-            </div>
-            <div class="div-table-row">
-                <div class="div-table-col">{{G4}}</div>
-            </div>
-        </div>
-        <div class="div-table">
-            <div class="div-table-row">
-                <div class="div-table-col" align="center">Group H</div>
-            </div>
-            <div class="div-table-row">
-                <div class="div-table-col">{{H1}}</div>
-            </div>
-            <div class="div-table-row">
-                <div class="div-table-col">{{H2}}</div>
-            </div>
-            <div class="div-table-row">
-                <div class="div-table-col">{{H3}}</div>
-            </div>
-            <div class="div-table-row">
-                <div class="div-table-col">{{H4}}</div>
-            </div>
+            <div class="row">
+                <div class="col-1">
+                    <div class="div-table">
+                        <div class="div-table-row">
+                            <div class="div-table-col" align="center">Group E</div>
+                        </div>
+                        <div class="div-table-row">
+                            <div class="div-table-col">{{E1}}</div>
+                        </div>
+                        <div class="div-table-row">
+                            <div class="div-table-col">{{E2}}</div>
+                        </div>
+                        <div class="div-table-row">
+                            <div class="div-table-col">{{E3}}</div>
+                        </div>
+                        <div class="div-table-row">
+                            <div class="div-table-col">{{E4}}</div>
+                        </div>
+                    </div>
+                </div> 
+                <div class="col-1">
+                    <div class="div-table">
+                        <div class="div-table-row">
+                            <div class="div-table-col" align="center">Group F</div>
+                        </div>
+                        <div class="div-table-row">
+                            <div class="div-table-col">{{F1}}</div>
+                        </div>
+                        <div class="div-table-row">
+                            <div class="div-table-col">{{F2}}</div>
+                        </div>
+                        <div class="div-table-row">
+                            <div class="div-table-col">{{F3}}</div>
+                        </div>
+                        <div class="div-table-row">
+                            <div class="div-table-col">{{F4}}</div>
+                        </div>
+                    </div>
+                </div> 
+                <div class="col-1">
+                    <div class="div-table">
+                        <div class="div-table-row">
+                            <div class="div-table-col" align="center">Group G</div>
+                        </div>
+                        <div class="div-table-row">
+                            <div class="div-table-col">{{G1}}</div>
+                        </div>
+                        <div class="div-table-row">
+                            <div class="div-table-col">{{G2}}</div>
+                        </div>
+                        <div class="div-table-row">
+                            <div class="div-table-col">{{G3}}</div>
+                        </div>
+                        <div class="div-table-row">
+                            <div class="div-table-col">{{G4}}</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-1">
+                    <div class="div-table">
+                        <div class="div-table-row">
+                            <div class="div-table-col" align="center">Group H</div>
+                        </div>
+                        <div class="div-table-row">
+                            <div class="div-table-col">{{H1}}</div>
+                        </div>
+                        <div class="div-table-row">
+                            <div class="div-table-col">{{H2}}</div>
+                        </div>
+                        <div class="div-table-row">
+                            <div class="div-table-col">{{H3}}</div>
+                        </div>
+                        <div class="div-table-row">
+                            <div class="div-table-col">{{H4}}</div>
+                        </div>
+                    </div>
+                </div>
+            </div>  
         </div>
     </div>
       
