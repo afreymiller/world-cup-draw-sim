@@ -7,6 +7,7 @@
     <script src="https://d3js.org/d3.v4.min.js"></script>
   </head>
   <body>
+    <div class="chart"></div>
     <div id="app">
         <button v-on:click="buttonClick">Simulate Draw</button>
         <div class="grid-container outline">
@@ -305,29 +306,19 @@
       )
     </script>
     <script>
-        d3.json('multiBarHorizontalData.json', function(data) {
-            nv.addGraph(function() {
-                var chart = nv.models.multiBarHorizontalChart()
-                    .x(function(d) { return d.label })
-                    .y(function(d) { return d.value })
-                    .margin({top: 30, right: 20, bottom: 50, left: 175})
-                    .showValues(true)           //Show bar value next to each bar.
-                    .tooltips(true)             //Show tooltips on hover.
-                    .transitionDuration(350)
-                    .showControls(true);        //Allow user to switch between "Grouped" and "Stacked" mode.
 
-                chart.yAxis
-                    .tickFormat(d3.format(',.2f'));
+        var data = [4, 8, 15, 16, 23, 42];
 
-                d3.select('#chart1 svg')
-                    .datum(data)
-                    .call(chart);
+        var x = d3.scale.linear()
+            .domain([0, d3.max(data)])
+            .range([0, 420]);
 
-                nv.utils.windowResize(chart.update);
-
-                return chart;
-            });
-            });
+        d3.select(".chart")
+        .selectAll("div")
+            .data(data)
+        .enter().append("div")
+            .style("width", function(d) { return x(d) + "px"; })
+            .text(function(d) { return d; });
     </script>
   </body>
 </html>

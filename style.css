@@ -1,4 +1,13 @@
 
+.chart div {
+  font: 10px sans-serif;
+  background-color: steelblue;
+  text-align: right;
+  padding: 3px;
+  margin: 1px;
+  color: white;
+}
+
 @media all and (max-width:800px){
         .col-1{ width: 33.33%;    }
         .col-2{ width: 50%;        }
