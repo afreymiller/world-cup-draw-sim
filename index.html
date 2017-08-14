@@ -2,8 +2,10 @@
   <head>
     <!-- these scripts should be loaded in some way other than CDNs -->
     <link rel = "stylesheet" type = "text/css" href = "style.css">
+    <script src="https://d3js.org/d3.v3.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.10/vue.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vuex/2.1.1/vuex.min.js"></script>
+    
   </head>
   <body>
     <div class="chart"></div>
@@ -167,8 +169,7 @@
                 </div>
             </div>  
         </div>
-    </div>
-      
+    </div> 
     <script type="text/javascript">
       new Vue(
         {
@@ -303,11 +304,16 @@
           }
         }
       )
-    </script>
-    <script src="https://d3js.org/d3.v3.min.js"></script>
+    </script> 
+    
    <script>
 
-var data = [4, 8, 15, 16, 23, 42];
+var data = [
+        {"GER": {"GF": 0, "GA": 0}, "ARG": {"GF": 0, "GA": 0}, "BRA": {"GF": 0, "GA": 0}, "POR": {"GF": 0, "GA": 0}, "SUI": {"GF": 0, "GA": 0}, "POL": {"GF": 0, "GA": 0}, "CHI": {"GF": 0, "GA": 0}, "RUS": {"GF": 0, "GA": 0}},
+        {"DRC": {"GF": 0, "GA": 0}, "NGA": {"GF": 0, "GA": 0}, "CIV": {"GF": 0, "GA": 0}, "BUR": {"GF": 0, "GA": 0}, "EGP": {"GF": 0, "GA": 0}, "URU": {"GF": 0, "GA": 0}, "COL": {"GF": 0, "GA": 0}, "IRE": {"GF": 0, "GA": 0}},
+        {"MEX": {"GF": 0, "GA": 0}, "CRC": {"GF": 0, "GA": 0}, "USA": {"GF": 0, "GA": 0}, "AUS": {"GF": 0, "GA": 0}, "IRN": {"GF": 0, "GA": 0}, "KOR": {"GF": 0, "GA": 0}, "JPN": {"GF": 0, "GA": 0}, "KSA": {"GF": 0, "GA": 0}},
+        {"SWE": {"GF": 0, "GA": 0}, "SER": {"GF": 0, "GA": 0}, "ENG": {"GF": 0, "GA": 0}, "FRA": {"GF": 0, "GA": 0}, "ESP": {"GF": 0, "GA": 0}, "BEL": {"GF": 0, "GA": 0}, "CRO": {"GF": 0, "GA": 0}, "GRE": {"GF": 0, "GA": 0}}
+    ];
 
 var x = d3.scale.linear()
     .domain([0, d3.max(data)])
