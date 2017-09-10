@@ -341,59 +341,50 @@
               'Pot4': ["SWE", "SER", "ENG", "FRA", "ESP", "BEL", "CRO", "GRE"]
           }, 
           'methods': {
-            'fillGroup': function(group)
+            'emptyPot': function(pot)
             {
-                switch(group)
+                switch(pot)
                 {
-                    case "A":
-                        this.A1 = this.popTeam("Pot1")[0];
-                        this.A2 = this.popTeam("Pot2")[0];
-                        this.A3 = this.popTeam("Pot3")[0];
-                        this.A4 = this.popTeam("Pot4")[0];
+                    case "Pot1":
+                        this.A1 = this.popTeam(pot)[0];
+                        this.B1 = this.popTeam(pot)[0];
+                        this.C1 = this.popTeam(pot)[0];
+                        this.D1 = this.popTeam(pot)[0];
+                        this.E1 = this.popTeam(pot)[0];
+                        this.F1 = this.popTeam(pot)[0];
+                        this.G1 = this.popTeam(pot)[0];
+                        this.H1 = this.popTeam(pot)[0];
                         break;
-                    case "B":
-                        this.B1 = this.popTeam("Pot1")[0];
-                        this.B2 = this.popTeam("Pot2")[0];
-                        this.B3 = this.popTeam("Pot3")[0];
-                        this.B4 = this.popTeam("Pot4")[0];
+                    case "Pot2":
+                        this.A2 = this.popTeam(pot)[0];
+                        this.B2 = this.popTeam(pot)[0];
+                        this.C2 = this.popTeam(pot)[0];
+                        this.D2 = this.popTeam(pot)[0];
+                        this.E2 = this.popTeam(pot)[0];
+                        this.F2 = this.popTeam(pot)[0];
+                        this.G2 = this.popTeam(pot)[0];
+                        this.H2 = this.popTeam(pot)[0];
                         break;
-                    case "C":
-                        this.C1 = this.popTeam("Pot1")[0];
-                        this.C2 = this.popTeam("Pot2")[0];
-                        this.C3 = this.popTeam("Pot3")[0];
-                        this.C4 = this.popTeam("Pot4")[0];
+                    case "Pot3":
+                        this.A3 = this.popTeam(pot)[0];
+                        this.B3 = this.popTeam(pot)[0];
+                        this.C3 = this.popTeam(pot)[0];
+                        this.D3 = this.popTeam(pot)[0];
+                        this.E3 = this.popTeam(pot)[0];
+                        this.F3 = this.popTeam(pot)[0];
+                        this.G3 = this.popTeam(pot)[0];
+                        this.H3 = this.popTeam(pot)[0];
                         break;
-                    case "D":
-                        this.D1 = this.popTeam("Pot1")[0];
-                        this.D2 = this.popTeam("Pot2")[0];
-                        this.D3 = this.popTeam("Pot3")[0];
-                        this.D4 = this.popTeam("Pot4")[0];
+                    case "Pot4":
+                        this.A4 = this.popTeam(pot)[0];
+                        this.B4 = this.popTeam(pot)[0];
+                        this.C4 = this.popTeam(pot)[0];
+                        this.D4 = this.popTeam(pot)[0];
+                        this.E4 = this.popTeam(pot)[0];
+                        this.F4 = this.popTeam(pot)[0];
+                        this.G4 = this.popTeam(pot)[0];
+                        this.H4 = this.popTeam(pot)[0];
                         break;
-                    case "E":
-                        this.E1 = this.popTeam("Pot1")[0];
-                        this.E2 = this.popTeam("Pot2")[0];
-                        this.E3 = this.popTeam("Pot3")[0];
-                        this.E4 = this.popTeam("Pot4")[0];
-                        break;
-                    case "F":
-                        this.F1 = this.popTeam("Pot1")[0];
-                        this.F2 = this.popTeam("Pot2")[0];
-                        this.F3 = this.popTeam("Pot3")[0];
-                        this.F4 = this.popTeam("Pot4")[0];
-                        break;
-                    case "G":
-                        this.G1 = this.popTeam("Pot1")[0];
-                        this.G2 = this.popTeam("Pot2")[0];
-                        this.G3 = this.popTeam("Pot3")[0];
-                        this.G4 = this.popTeam("Pot4")[0];
-                        break;
-                    case "H":
-                        this.H1 = this.popTeam("Pot1")[0];
-                        this.H2 = this.popTeam("Pot2")[0];
-                        this.H3 = this.popTeam("Pot3")[0];
-                        this.H4 = this.popTeam("Pot4")[0];
-                        break;
-                    
                 }
             },
             'popTeam': function(pot) 
@@ -414,14 +405,10 @@
             },
             'buttonClick': function() 
             {
-                this.fillGroup("A");
-                this.fillGroup("B");
-                this.fillGroup("C");
-                this.fillGroup("D");
-                this.fillGroup("E");
-                this.fillGroup("F");
-                this.fillGroup("G");
-                this.fillGroup("H");
+                this.emptyPot("Pot1");
+                this.emptyPot("Pot2");
+                this.emptyPot("Pot3");
+                this.emptyPot("Pot4");
 
                 this.Pot1 = ["GER", "ARG", "BRA", "POR", "SUI", "POL", "CHI", "RUS"],
                 this.Pot2 = ["DRC", "NGA", "CIV", "BUR", "EGP", "URU", "COL", "IRE"],
