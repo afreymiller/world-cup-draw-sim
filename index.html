@@ -359,14 +359,14 @@
           'methods': {
             'emptyPot': function(pot)
             {
-                this.A[pot] = this.popTeam(pot)[0];
-                this.B[pot] = this.popTeam(pot)[0];
-                this.C[pot] = this.popTeam(pot)[0];
-                this.D[pot] = this.popTeam(pot)[0];
-                this.E[pot] = this.popTeam(pot)[0];
-                this.F[pot] = this.popTeam(pot)[0];
-                this.G[pot] = this.popTeam(pot)[0];
-                this.H[pot] = this.popTeam(pot)[0];
+                setTimeout(() => this.A[pot] = this.popTeam(pot)[0], 250);
+                setTimeout(() => this.B[pot] = this.popTeam(pot)[0], 500);
+                setTimeout(() => this.C[pot] = this.popTeam(pot)[0], 750);
+                setTimeout(() => this.D[pot] = this.popTeam(pot)[0], 1000);
+                setTimeout(() => this.E[pot] = this.popTeam(pot)[0], 1250);
+                setTimeout(() => this.F[pot] = this.popTeam(pot)[0], 1500);
+                setTimeout(() => this.G[pot] = this.popTeam(pot)[0], 1750);
+                setTimeout(() => this.H[pot] = this.popTeam(pot)[0], 2000);
             },
             'popTeam': function(pot) 
             {
@@ -386,12 +386,10 @@
             },
             'buttonClick': function() 
             {
-                setTimeout(this.emptyPot("One"), 5000);
-                //setTimeout(function(){ emptyPot("Pot1") }, 2000);
-                //this.emptyPot("Pot1");
-                this.emptyPot("Two");
-                this.emptyPot("Three");
-                this.emptyPot("Four");
+                setTimeout(() => this.emptyPot("One"), 0);
+                setTimeout(() => this.emptyPot("Two"), 2000);
+                setTimeout(() => this.emptyPot("Three"), 4000);
+                setTimeout(() => this.emptyPot("Four"), 6000);
 
                 this.Pot1 = ["GER", "ARG", "BRA", "POR", "SUI", "POL", "CHI", "RUS"],
                 this.Pot2 = ["DRC", "NGA", "CIV", "BUR", "EGP", "URU", "COL", "IRE"],
