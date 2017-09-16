@@ -1766,12 +1766,12 @@
 ['BEL', 'CHI', 'HSV', 'JPN']
 ['GER', 'COL', 'TUN', 'B&H']
 ['BRA', 'WAL', 'EGY', 'KOR']
-['ARG', 'ENG', 'ITA', 'AUS']
+['ARG', 'ENG', 'ITA', 'AUS'] -x
 
 178.
 ['RUS', 'CHI', 'HSV', 'NGA']
 ['BRA', 'WAL', 'USA', 'KSA']
-['GER', 'MEX', 'ITA', 'CIV']
+['GER', 'MEX', 'ITA', 'CIV'] -x
 ['POR', 'ESP', 'IRN', 'BUR']
 ['SUI', 'FRA', 'EGY', 'KOR']
 ['POL', 'COL', 'CRC', 'JPN']
@@ -1783,15 +1783,15 @@
 ['BEL', 'CHI', 'IRN', 'B&H']
 ['BRA', 'WAL', 'TUN', 'KSA']
 ['GER', 'ENG', 'CRC', 'NGA']
-['ARG', 'FRA', 'ITA', 'AUS']
+['ARG', 'FRA', 'ITA', 'AUS'] -x
 ['POL', 'URU', 'SER', 'CIV']
 ['POR', 'ESP', 'EGY', 'KOR']
 ['SUI', 'COL', 'USA', 'BUR']
 
 180.
 ['RUS', 'ESP', 'IRN', 'BUR']
-['GER', 'CHI', 'ITA', 'NGA']
-['BRA', 'FRA', 'SER', 'JPN']
+['GER', 'CHI', 'ITA', 'NGA'] -x
+['BRA', 'FRA', 'SER', 'JPN'] -x
 ['ARG', 'ENG', 'EGY', 'KOR']
 ['BEL', 'MEX', 'TUN', 'KSA']
 ['POL', 'URU', 'CRC', 'B&H']
@@ -1801,7 +1801,7 @@
 181.
 ['RUS', 'ESP', 'CRC', 'CIV']
 ['GER', 'URU', 'HSV', 'KOR']
-['BRA', 'MEX', 'ITA', 'NGA']
+['BRA', 'MEX', 'ITA', 'NGA'] -x
 ['POL', 'FRA', 'EGY', 'JPN']
 ['POR', 'COL', 'USA', 'B&H']
 ['ARG', 'WAL', 'TUN', 'KSA']
@@ -1813,16 +1813,16 @@
 ['ARG', 'WAL', 'CRC', 'BUR']
 ['POR', 'ENG', 'USA', 'CIV']
 ['SUI', 'FRA', 'TUN', 'AUS']
-['BRA', 'ESP', 'ITA', 'KOR']
+['BRA', 'ESP', 'ITA', 'KOR'] -x
 ['POL', 'URU', 'HSV', 'KSA']
 ['GER', 'CHI', 'IRN', 'B&H']
 ['BEL', 'MEX', 'EGY', 'JPN']
 
 183.
 ['RUS', 'URU', 'TUN', 'KOR']
-['ARG', 'FRA', 'ITA', 'NGA']
+['ARG', 'FRA', 'ITA', 'NGA'] -x
 ['BRA', 'WAL', 'SER', 'CIV']
-['BEL', 'ESP', 'IRN', 'BUR']
+['BEL', 'ESP', 'IRN', 'BUR'] -x
 ['SUI', 'CHI', 'USA', 'B&H']
 ['POL', 'COL', 'EGY', 'JPN']
 ['GER', 'ENG', 'CRC', 'KSA']
@@ -1830,9 +1830,9 @@
 
 184.
 ['RUS', 'CHI', 'USA', 'AUS']
-['GER', 'ESP', 'IRN', 'CIV']
+['GER', 'ESP', 'IRN', 'CIV'] -x
 ['BEL', 'COL', 'EGY', 'B&H']
-['ARG', 'MEX', 'ITA', 'NGA']
+['ARG', 'MEX', 'ITA', 'NGA'] -x
 ['POR', 'WAL', 'TUN', 'KOR']
 ['SUI', 'URU', 'HSV', 'JPN']
 ['BRA', 'ENG', 'SER', 'KSA']
@@ -1843,48 +1843,48 @@
 ['POL', 'COL', 'SER', 'CIV']
 ['SUI', 'CHI', 'IRN', 'B&H']
 ['ARG', 'ENG', 'TUN', 'JPN']
-['BEL', 'ESP', 'CRC', 'KSA']
-['POR', 'FRA', 'EGY', 'KOR']
+['BEL', 'ESP', 'CRC', 'KSA'] -x
+['POR', 'FRA', 'EGY', 'KOR'] 
 ['BRA', 'WAL', 'USA', 'NGA']
-['GER', 'MEX', 'HSV', 'AUS']
+['GER', 'MEX', 'HSV', 'AUS'] 
 
 186.
 ['RUS', 'URU', 'ITA', 'JPN']
 ['POR', 'WAL', 'EGY', 'KSA']
 ['SUI', 'MEX', 'SER', 'NGA']
 ['POL', 'ENG', 'USA', 'BUR']
-['ARG', 'FRA', 'IRN', 'CIV']
-['BRA', 'ESP', 'CRC', 'AUS']
+['ARG', 'FRA', 'IRN', 'CIV'] -x
+['BRA', 'ESP', 'CRC', 'AUS'] -x
 ['BEL', 'COL', 'HSV', 'KOR']
 ['GER', 'CHI', 'TUN', 'B&H']
 
 187.
 ['RUS', 'WAL', 'USA', 'JPN']
-['GER', 'URU', 'ITA', 'NGA']
+['GER', 'URU', 'ITA', 'NGA'] -x
 ['BEL', 'FRA', 'TUN', 'KSA']
 ['POL', 'CHI', 'HSV', 'AUS']
 ['POR', 'COL', 'CRC', 'B&H']
 ['SUI', 'ENG', 'EGY', 'KOR']
-['ARG', 'ESP', 'IRN', 'BUR']
+['ARG', 'ESP', 'IRN', 'BUR'] -x
 ['BRA', 'MEX', 'SER', 'CIV']
 
 188.
 ['RUS', 'COL', 'ITA', 'NGA']
-['GER', 'FRA', 'EGY', 'KOR']
+['GER', 'FRA', 'EGY', 'KOR'] -x
 ['BRA', 'WAL', 'CRC', 'BUR']
 ['SUI', 'URU', 'SER', 'JPN']
 ['BEL', 'CHI', 'HSV', 'AUS']
 ['POL', 'MEX', 'TUN', 'B&H']
 ['POR', 'ENG', 'USA', 'KSA']
-['ARG', 'ESP', 'IRN', 'CIV']
+['ARG', 'ESP', 'IRN', 'CIV'] -x
 
 189.
 ['RUS', 'URU', 'ITA', 'CIV']
 ['POR', 'MEX', 'SER', 'KOR']
 ['BRA', 'ENG', 'IRN', 'BUR']
-['BEL', 'ESP', 'TUN', 'JPN']
+['BEL', 'ESP', 'TUN', 'JPN'] -x
 ['POL', 'CHI', 'USA', 'B&H']
-['ARG', 'FRA', 'HSV', 'KSA']
+['ARG', 'FRA', 'HSV', 'KSA'] -x
 ['GER', 'COL', 'CRC', 'NGA']
 ['SUI', 'WAL', 'EGY', 'AUS']
 
@@ -1894,7 +1894,7 @@
 ['POL', 'CHI', 'SER', 'JPN']
 ['BRA', 'WAL', 'HSV', 'AUS']
 ['BEL', 'COL', 'EGY', 'KOR']
-['ARG', 'FRA', 'TUN', 'KSA']
+['ARG', 'FRA', 'TUN', 'KSA'] -x
 ['POR', 'ESP', 'IRN', 'BUR']
 ['GER', 'ENG', 'USA', 'CIV']
 
@@ -1906,11 +1906,11 @@
 ['GER', 'URU', 'CRC', 'B&H']
 ['SUI', 'CHI', 'HSV', 'KSA']
 ['POR', 'ENG', 'IRN', 'NGA']
-['BRA', 'ESP', 'ITA', 'BUR']
+['BRA', 'ESP', 'ITA', 'BUR'] -x
 
 192.
 ['RUS', 'URU', 'EGY', 'KSA']
-['GER', 'ESP', 'IRN', 'CIV']
+['GER', 'ESP', 'IRN', 'CIV'] -x
 ['SUI', 'WAL', 'USA', 'JPN']
 ['BEL', 'CHI', 'HSV', 'NGA']
 ['BRA', 'ENG', 'CRC', 'AUS']
@@ -1923,29 +1923,29 @@
 ['GER', 'CHI', 'TUN', 'JPN']
 ['SUI', 'COL', 'HSV', 'KSA']
 ['POL', 'ESP', 'CRC', 'AUS']
-['ARG', 'FRA', 'IRN', 'NGA']
+['ARG', 'FRA', 'IRN', 'NGA'] -x
 ['POR', 'MEX', 'EGY', 'B&H']
 ['BRA', 'WAL', 'SER', 'CIV']
 ['BEL', 'URU', 'ITA', 'KOR']
 
 194.
 ['RUS', 'MEX', 'HSV', 'CIV']
-['ARG', 'FRA', 'IRN', 'B&H']
-['BEL', 'ESP', 'USA', 'KOR']
+['ARG', 'FRA', 'IRN', 'B&H'] -x
+['BEL', 'ESP', 'USA', 'KOR'] -x
 ['POL', 'URU', 'EGY', 'JPN']
 ['BRA', 'ENG', 'SER', 'NGA']
 ['SUI', 'WAL', 'CRC', 'BUR']
 ['POR', 'COL', 'TUN', 'AUS']
-['GER', 'CHI', 'ITA', 'KSA']
+['GER', 'CHI', 'ITA', 'KSA'] -x
 
 195.
 ['RUS', 'ENG', 'IRN', 'NGA']
-['ARG', 'FRA', 'SER', 'AUS']
+['ARG', 'FRA', 'SER', 'AUS'] -x
 ['SUI', 'WAL', 'EGY', 'KSA']
 ['POL', 'COL', 'ITA', 'CIV']
 ['BRA', 'MEX', 'HSV', 'JPN']
 ['POR', 'CHI', 'CRC', 'BUR']
-['GER', 'ESP', 'TUN', 'KOR']
+['GER', 'ESP', 'TUN', 'KOR'] -x
 ['BEL', 'URU', 'USA', 'B&H']
 
 196.
@@ -1956,12 +1956,12 @@
 ['GER', 'URU', 'USA', 'NGA']
 ['POL', 'COL', 'HSV', 'KSA']
 ['BEL', 'CHI', 'IRN', 'B&H']
-['BRA', 'ESP', 'ITA', 'CIV']
+['BRA', 'ESP', 'ITA', 'CIV'] -x
 
 197.
 ['RUS', 'CHI', 'IRN', 'CIV']
-['ARG', 'ENG', 'ITA', 'KOR']
-['BRA', 'ESP', 'EGY', 'B&H']
+['ARG', 'ENG', 'ITA', 'KOR'] -x
+['BRA', 'ESP', 'EGY', 'B&H'] -x
 ['POR', 'URU', 'SER', 'NGA']
 ['GER', 'WAL', 'CRC', 'JPN']
 ['SUI', 'MEX', 'HSV', 'BUR']
@@ -1972,10 +1972,10 @@
 ['RUS', 'URU', 'ITA', 'NGA']
 ['SUI', 'CHI', 'CRC', 'KSA']
 ['POL', 'COL', 'SER', 'JPN']
-['ARG', 'ESP', 'EGY', 'B&H']
+['ARG', 'ESP', 'EGY', 'B&H'] =x
 ['BRA', 'ENG', 'TUN', 'KOR']
 ['POR', 'WAL', 'IRN', 'CIV']
-['GER', 'FRA', 'USA', 'BUR']
+['GER', 'FRA', 'USA', 'BUR'] -x
 ['BEL', 'MEX', 'HSV', 'AUS']
 
 199.
@@ -1984,14 +1984,14 @@
 ['SUI', 'MEX', 'TUN', 'B&H']
 ['POR', 'FRA', 'USA', 'JPN']
 ['GER', 'COL', 'CRC', 'CIV']
-['ARG', 'ESP', 'HSV', 'KOR']
+['ARG', 'ESP', 'HSV', 'KOR'] -x
 ['POL', 'ENG', 'EGY', 'KSA']
-['BRA', 'WAL', 'ITA', 'BUR']
+['BRA', 'WAL', 'ITA', 'BUR'] -x
 
 200.
 ['RUS', 'ESP', 'IRN', 'NGA']
 ['SUI', 'COL', 'ITA', 'BUR']
-['ARG', 'FRA', 'USA', 'KSA']
+['ARG', 'FRA', 'USA', 'KSA'] -x
 ['GER', 'URU', 'SER', 'CIV']
 ['BEL', 'CHI', 'CRC', 'KOR']
 ['POL', 'WAL', 'TUN', 'JPN']
@@ -2005,7 +2005,7 @@
 ['BEL', 'URU', 'EGY', 'B&H']
 ['ARG', 'MEX', 'SER', 'BUR']
 ['SUI', 'CHI', 'ITA', 'KOR']
-['BRA', 'FRA', 'HSV', 'JPN']
+['BRA', 'FRA', 'HSV', 'JPN'] -x
 ['POR', 'WAL', 'USA', 'KSA']
 
 202.
@@ -2016,14 +2016,14 @@
 ['BEL', 'URU', 'TUN', 'KSA']
 ['SUI', 'MEX', 'ITA', 'JPN']
 ['POR', 'COL', 'HSV', 'CIV']
-['GER', 'ESP', 'IRN', 'NGA']
+['GER', 'ESP', 'IRN', 'NGA'] -x
 
 203.
 ['RUS', 'URU', 'CRC', 'B&H']
 ['POR', 'WAL', 'TUN', 'KSA']
 ['POL', 'FRA', 'IRN', 'BUR']
 ['GER', 'COL', 'EGY', 'KOR']
-['BRA', 'ESP', 'SER', 'NGA']
+['BRA', 'ESP', 'SER', 'NGA'] -x
 ['BEL', 'CHI', 'USA', 'JPN']
 ['ARG', 'ENG', 'HSV', 'AUS']
 ['SUI', 'MEX', 'ITA', 'CIV']
@@ -2031,10 +2031,10 @@
 204.
 ['RUS', 'ENG', 'CRC', 'BUR']
 ['ARG', 'MEX', 'EGY', 'KSA']
-['GER', 'FRA', 'USA', 'KOR']
+['GER', 'FRA', 'USA', 'KOR'] -x
 ['SUI', 'CHI', 'HSV', 'AUS']
 ['POL', 'COL', 'TUN', 'B&H']
-['BRA', 'ESP', 'SER', 'JPN']
+['BRA', 'ESP', 'SER', 'JPN'] -x
 ['BEL', 'URU', 'ITA', 'NGA']
 ['POR', 'WAL', 'IRN', 'CIV']
 
@@ -2042,7 +2042,7 @@
 ['RUS', 'ENG', 'EGY', 'AUS']
 ['BEL', 'COL', 'IRN', 'NGA']
 ['POR', 'WAL', 'TUN', 'JPN']
-['ARG', 'ESP', 'HSV', 'KSA']
+['ARG', 'ESP', 'HSV', 'KSA'] -x
 ['BRA', 'MEX', 'SER', 'B&H']
 ['SUI', 'FRA', 'USA', 'KOR']
 ['GER', 'URU', 'ITA', 'CIV']
@@ -2056,7 +2056,7 @@
 ['GER', 'MEX', 'IRN', 'CIV']
 ['ARG', 'WAL', 'ITA', 'AUS']
 ['POL', 'ENG', 'CRC', 'JPN']
-['BRA', 'ESP', 'USA', 'KSA']
+['BRA', 'ESP', 'USA', 'KSA'] -x
 
 207.
 ['RUS', 'COL', 'SER', 'JPN']
@@ -2066,16 +2066,16 @@
 ['POL', 'CHI', 'ITA', 'KOR']
 ['ARG', 'ENG', 'TUN', 'AUS']
 ['POR', 'ESP', 'IRN', 'BUR']
-['GER', 'FRA', 'USA', 'NGA']
+['GER', 'FRA', 'USA', 'NGA'] -x
 
 208.
 ['RUS', 'ENG', 'IRN', 'BUR']
-['BRA', 'WAL', 'CRC', 'B&H']
+['BRA', 'WAL', 'CRC', 'B&H'] 
 ['POL', 'CHI', 'EGY', 'KOR']
 ['SUI', 'ESP', 'TUN', 'JPN']
 ['POR', 'MEX', 'SER', 'KSA']
-['GER', 'COL', 'ITA', 'CIV']
-['ARG', 'FRA', 'USA', 'AUS']
+['GER', 'COL', 'ITA', 'CIV'] -x
+['ARG', 'FRA', 'USA', 'AUS'] -x
 ['BEL', 'URU', 'HSV', 'NGA']
 
 
