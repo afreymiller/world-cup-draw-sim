@@ -17,13 +17,34 @@ pot_2 = ["ESP", "WAL", "FRA", "COL", "MEX", "ENG", "URU", "CHI"]
 pot_3 = ["ITA", "HSV", "CRC", "IRN", "USA", "EGY", "TUN", "SER"]
 pot_4 = ["B&H", "JPN", "NGA", "BUR", "AUS", "KOR", "KSA", "CIV"]
 
-def empty_1(group):
-    rand_i = random.randint(0, len(pot_1)-1)
-    team = pot_1.pop(rand_i)
+def get_random_team_confed_and_count(group, pot):
+    rand_i = random.randint(0, len(pot)-1)
+    team = pot.pop(rand_i)
+    confed = teams[team]
+    count = teams.get(teams[team], 0)
+    return team, confed, count
+
+def team_can_be_added_to_group(count, confed):
+    return (count == 0) or (count == 1 and confed == "UEFA")
+
+def update_group(group, team, confed, count):
     group["teams"].append(team)
-    k = teams[team]
-    v = teams.get(teams[team], 0)
-    group[k] = v + 1 
+    group[confed] = count + 1
+
+def empty_pot(group, pot):
+    
+    team, confed, count = get_random_team_confed_and_count(group, pot)
+    can_be_added = team_can_be_added_to_group(count, confed)
+
+    while not can_be_added:
+        pot.append(team)
+        team, confed, count = get_random_team_confed_and_count(group, pot)
+        can_be_added = team_can_be_added_to_group(count, confed)
+
+    update_group(group, team, confed, count)
+ 
+
+        
 
 def simulate_draw():
     A = {"teams": [], "CAF": 0, "UEFA": 0, "CONMEBOL": 0, "AFC": 0, "CONCACAF": 0}
@@ -35,15 +56,41 @@ def simulate_draw():
     G = {"teams": [], "CAF": 0, "UEFA": 0, "CONMEBOL": 0, "AFC": 0, "CONCACAF": 0}
     H = {"teams": [], "CAF": 0, "UEFA": 0, "CONMEBOL": 0, "AFC": 0, "CONCACAF": 0}
 
-    empty_1(A)
-    empty_1(B)
-    empty_1(C)
-    empty_1(D)
-    empty_1(E)
-    empty_1(F)
-    empty_1(G)
+    empty_pot(A, pot_1)
+    empty_pot(B, pot_1)
+    empty_pot(C, pot_1)
+    empty_pot(D, pot_1)
+    empty_pot(E, pot_1)
+    empty_pot(F, pot_1)
+    empty_pot(G, pot_1)
+    empty_pot(H, pot_1)
 
-    H["teams"].append(pot_1[0])
+    empty_pot(A, pot_2)
+    empty_pot(B, pot_2)
+    empty_pot(C, pot_2)
+    empty_pot(D, pot_2)
+    empty_pot(E, pot_2)
+    empty_pot(F, pot_2)
+    empty_pot(G, pot_2)
+    empty_pot(H, pot_2)
+
+    empty_pot(A, pot_3)
+    empty_pot(B, pot_3)
+    empty_pot(C, pot_3)
+    empty_pot(D, pot_3)
+    empty_pot(E, pot_3)
+    empty_pot(F, pot_3)
+    empty_pot(G, pot_3)
+    empty_pot(H, pot_3)
+
+    empty_pot(A, pot_4)
+    empty_pot(B, pot_4)
+    empty_pot(C, pot_4)
+    empty_pot(D, pot_4)
+    empty_pot(E, pot_4)
+    empty_pot(F, pot_4)
+    empty_pot(G, pot_4)
+    empty_pot(H, pot_4)
 
     print(A)
     print(B)
