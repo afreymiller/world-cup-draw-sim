@@ -17,6 +17,14 @@ pot_2 = ["ESP", "WAL", "FRA", "COL", "MEX", "ENG", "URU", "CHI"]
 pot_3 = ["ITA", "HSV", "CRC", "IRN", "USA", "EGY", "TUN", "SER"]
 pot_4 = ["B&H", "JPN", "NGA", "BUR", "AUS", "KOR", "KSA", "CIV"]
 
+def empty_1(group):
+    rand_i = random.randint(0, len(pot_1)-1)
+    team = pot_1.pop(rand_i)
+    group["teams"].append(team)
+    k = teams[team]
+    v = teams.get(teams[team], 0)
+    group[k] = v + 1 
+
 def simulate_draw():
     A = {"teams": [], "CAF": 0, "UEFA": 0, "CONMEBOL": 0, "AFC": 0, "CONCACAF": 0}
     B = {"teams": [], "CAF": 0, "UEFA": 0, "CONMEBOL": 0, "AFC": 0, "CONCACAF": 0}
@@ -27,26 +35,13 @@ def simulate_draw():
     G = {"teams": [], "CAF": 0, "UEFA": 0, "CONMEBOL": 0, "AFC": 0, "CONCACAF": 0}
     H = {"teams": [], "CAF": 0, "UEFA": 0, "CONMEBOL": 0, "AFC": 0, "CONCACAF": 0}
 
-    rand_i = random.randint(0, len(pot_1)-1)
-    A["teams"].append(pot_1.pop(rand_i))
-
-    rand_i = random.randint(0, len(pot_1)-1)
-    B["teams"].append(pot_1.pop(rand_i))
-
-    rand_i = random.randint(0, len(pot_1)-1)
-    C["teams"].append(pot_1.pop(rand_i))
-
-    rand_i = random.randint(0, len(pot_1)-1)
-    D["teams"].append(pot_1.pop(rand_i))
-
-    rand_i = random.randint(0, len(pot_1)-1)
-    E["teams"].append(pot_1.pop(rand_i))
-
-    rand_i = random.randint(0, len(pot_1)-1)
-    F["teams"].append(pot_1.pop(rand_i))
-
-    rand_i = random.randint(0, len(pot_1)-1)
-    G["teams"].append(pot_1.pop(rand_i))
+    empty_1(A)
+    empty_1(B)
+    empty_1(C)
+    empty_1(D)
+    empty_1(E)
+    empty_1(F)
+    empty_1(G)
 
     H["teams"].append(pot_1[0])
 
