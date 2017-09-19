@@ -1,0 +1,53 @@
+['BRA', 'ESP', 'USA', 'NGA'] - x
+['GER', 'FRA', 'CRC', 'CIV'] - x
+['ARG', 'WAL', 'ITA', 'AUS'] - x
+
+['ARG', 'FRA', 'ITA', 'JPN'] - x
+['BRA', 'ESP', 'CRC', 'NGA'] - x
+
+['BRA', 'ESP', 'USA', 'NGA'] - x
+
+['ARG', 'ESP', 'SER', 'BUR'] - x
+['GER', 'CHI', 'ITA', 'KSA'] - x
+['BRA', 'FRA', 'TUN', 'KOR'] - x
+
+['BRA', 'ESP', 'HSV', 'KSA'] - x
+
+['BRA', 'ENG', 'ITA', 'NGA'] - x
+['ARG', 'ESP', 'SER', 'KSA'] - x
+['GER', 'FRA', 'USA', 'CIV'] - x
+
+['ARG', 'ESP', 'CRC', 'BUR'] - x
+
+['POR', 'URU', 'ITA', 'AUS'] - x
+['ARG', 'ENG', 'USA', 'NGA'] - x
+
+['ARG', 'ESP', 'ITA', 'KSA'] - x
+
+['GER', 'URU', 'ITA', 'KOR'] - x
+['ARG', 'FRA', 'HSV', 'BUR'] - x
+
+['BRA', 'FRA', 'CRC', 'KSA'] -x
+['ARG', 'ESP', 'HSV', 'NGA'] -x 
+
+['GER', 'FRA', 'USA', 'JPN'] -x
+['BRA', 'ESP', 'CRC', 'B&H'] -x
+
+['ARG', 'ENG', 'HSV', 'NGA'] -x
+['BRA', 'FRA', 'USA', 'KOR'] -x
+
+['BRA', 'ENG', 'USA', 'BUR'] -x
+
+['ARG', 'FRA', 'TUN', 'JPN'] -x
+['BRA', 'ESP', 'USA', 'B&H'] -x
+
+['GER', 'URU', 'ITA', 'CIV'] -x
+['BRA', 'ENG', 'USA', 'NGA'] -x
+
+['ARG', 'MEX', 'ITA', 'CIV'] -x
+
+['BRA', 'ESP', 'IRN', 'CIV'] -x
+['ARG', 'FRA', 'TUN', 'JPN'] -x
+
+['ARG', 'ESP', 'EGY', 'AUS'] -x
+['BRA', 'ENG', 'ITA', 'KSA'] -x
