@@ -25,260 +25,260 @@ POL,COL,IRN,BUR
 POR,MEX,HSV,KSA
 BRA,ESP,USA,NGA
 
-RUS, 'ENG', 'CRC', 'JPN']
-SUI, 'COL', 'IRN', 'NGA']
-ARG, 'ESP', 'SER', 'BUR'] - x
-GER, 'CHI', 'ITA', 'KSA'] - x
-BEL, 'MEX', 'EGY', 'B&H']
-POR, 'URU', 'HSV', 'CIV']
-BRA, 'FRA', 'TUN', 'KOR'] - x
-POL, 'WAL', 'USA', 'AUS'] - L
+RUS,ENG', 'CRC', 'JPN']
+SUI,COL', 'IRN', 'NGA']
+ARG,ESP', 'SER', 'BUR'] - x
+GER,CHI', 'ITA', 'KSA'] - x
+BEL,MEX', 'EGY', 'B&H']
+POR,URU', 'HSV', 'CIV']
+BRA,FRA', 'TUN', 'KOR'] - x
+POL,WAL', 'USA', 'AUS'] - L
 
-RUS, 'MEX', 'ITA', 'NGA'] 
-GER, 'URU', 'SER', 'JPN']
-BEL, 'COL', 'USA', 'CIV']
-BRA, 'ESP', 'HSV', 'KSA'] - x
-ARG, 'ENG', 'TUN', 'B&H']
-POL, 'FRA', 'IRN', 'BUR']
-SUI, 'WAL', 'EGY', 'KOR']
-POR, 'CHI', 'CRC', 'AUS']
+RUS,MEX', 'ITA', 'NGA'] 
+GER,URU', 'SER', 'JPN']
+BEL,COL', 'USA', 'CIV']
+BRA,ESP', 'HSV', 'KSA'] - x
+ARG,ENG', 'TUN', 'B&H']
+POL,FRA', 'IRN', 'BUR']
+SUI,WAL', 'EGY', 'KOR']
+POR,CHI', 'CRC', 'AUS']
 
-RUS, 'WAL', 'TUN', 'JPN'] 
-POR, 'URU', 'IRN', 'B&H']
-BRA, 'ENG', 'ITA', 'NGA'] - x
-ARG, 'ESP', 'SER', 'KSA'] - x
-GER, 'FRA', 'USA', 'CIV'] - x
-POL, 'CHI', 'HSV', 'AUS']
-SUI, 'COL', 'CRC', 'BUR']
-BEL, 'MEX', 'EGY', 'KOR']
+RUS,WAL', 'TUN', 'JPN'] 
+POR,URU', 'IRN', 'B&H']
+BRA,ENG', 'ITA', 'NGA'] - x
+ARG,ESP', 'SER', 'KSA'] - x
+GER,FRA', 'USA', 'CIV'] - x
+POL,CHI', 'HSV', 'AUS']
+SUI,COL', 'CRC', 'BUR']
+BEL,MEX', 'EGY', 'KOR']
 
-RUS, 'URU', 'HSV', 'AUS']
-POL, 'ENG', 'USA', 'KOR']
-ARG, 'ESP', 'CRC', 'BUR'] - x
-GER, 'COL', 'SER', 'NGA']
-BEL, 'CHI', 'ITA', 'JPN']
-SUI, 'FRA', 'EGY', 'KSA']
-BRA, 'MEX', 'TUN', 'B&H']
-POR, 'WAL', 'IRN', 'CIV']
+RUS,URU', 'HSV', 'AUS']
+POL,ENG', 'USA', 'KOR']
+ARG,ESP', 'CRC', 'BUR'] - x
+GER,COL', 'SER', 'NGA']
+BEL,CHI', 'ITA', 'JPN']
+SUI,FRA', 'EGY', 'KSA']
+BRA,MEX', 'TUN', 'B&H']
+POR,WAL', 'IRN', 'CIV']
 
-RUS, 'COL', 'HSV', 'KOR']
-BEL, 'ESP', 'CRC', 'CIV']
-BRA, 'WAL', 'EGY', 'B&H']
-POL, 'MEX', 'TUN', 'KSA']
-GER, 'CHI', 'SER', 'JPN']
-POR, 'URU', 'ITA', 'AUS'] - x
-SUI, 'FRA', 'IRN', 'BUR']
-ARG, 'ENG', 'USA', 'NGA'] - x
+RUS,COL', 'HSV', 'KOR']
+BEL,ESP', 'CRC', 'CIV']
+BRA,WAL', 'EGY', 'B&H']
+POL,MEX', 'TUN', 'KSA']
+GER,CHI', 'SER', 'JPN']
+POR,URU', 'ITA', 'AUS'] - x
+SUI,FRA', 'IRN', 'BUR']
+ARG,ENG', 'USA', 'NGA'] - x
 
-RUS, 'WAL', 'IRN', 'NGA']
-POR, 'URU', 'TUN', 'B&H']
-BRA, 'ENG', 'EGY', 'AUS']
-POL, 'FRA', 'USA', 'KOR']
-GER, 'COL', 'CRC', 'JPN']
-ARG, 'ESP', 'ITA', 'KSA'] - x
-SUI, 'MEX', 'HSV', 'CIV']
-BEL, 'CHI', 'SER', 'BUR']
+RUS,WAL', 'IRN', 'NGA']
+POR,URU', 'TUN', 'B&H']
+BRA,ENG', 'EGY', 'AUS']
+POL,FRA', 'USA', 'KOR']
+GER,COL', 'CRC', 'JPN']
+ARG,ESP', 'ITA', 'KSA'] - x
+SUI,MEX', 'HSV', 'CIV']
+BEL,CHI', 'SER', 'BUR']
 
-RUS, 'CHI', 'IRN', 'B&H']
-POR, 'ENG', 'USA', 'NGA']
-BRA, 'MEX', 'SER', 'JPN']
-GER, 'URU', 'ITA', 'KOR'] - x
-ARG, 'FRA', 'HSV', 'BUR'] - x
-SUI, 'ESP', 'EGY', 'KSA']
-BEL, 'COL', 'TUN', 'AUS']
-POL, 'WAL', 'CRC', 'CIV']
+RUS,CHI', 'IRN', 'B&H']
+POR,ENG', 'USA', 'NGA']
+BRA,MEX', 'SER', 'JPN']
+GER,URU', 'ITA', 'KOR'] - x
+ARG,FRA', 'HSV', 'BUR'] - x
+SUI,ESP', 'EGY', 'KSA']
+BEL,COL', 'TUN', 'AUS']
+POL,WAL', 'CRC', 'CIV']
 
-RUS, 'ENG', 'EGY', 'JPN']
-POR, 'URU', 'SER', 'KOR']
-GER, 'MEX', 'TUN', 'B&H']
-BEL, 'CHI', 'ITA', 'AUS']
-BRA, 'FRA', 'CRC', 'KSA'] -x
-ARG, 'ESP', 'HSV', 'NGA'] -x 
-SUI, 'COL', 'IRN', 'BUR']
-POL, 'WAL', 'USA', 'CIV']
+RUS,ENG', 'EGY', 'JPN']
+POR,URU', 'SER', 'KOR']
+GER,MEX', 'TUN', 'B&H']
+BEL,CHI', 'ITA', 'AUS']
+BRA,FRA', 'CRC', 'KSA'] -x
+ARG,ESP', 'HSV', 'NGA'] -x 
+SUI,COL', 'IRN', 'BUR']
+POL,WAL', 'USA', 'CIV']
 
-RUS, 'ENG', 'IRN', 'BUR']
-POL, 'CHI', 'ITA', 'KSA']
-SUI, 'MEX', 'TUN', 'AUS']
-POR, 'COL', 'EGY', 'KOR']
-GER, 'FRA', 'USA', 'JPN'] -x
-BEL, 'URU', 'HSV', 'CIV']
-BRA, 'ESP', 'CRC', 'B&H'] -x
-ARG, 'WAL', 'SER', 'NGA']
+RUS,ENG', 'IRN', 'BUR']
+POL,CHI', 'ITA', 'KSA']
+SUI,MEX', 'TUN', 'AUS']
+POR,COL', 'EGY', 'KOR']
+GER,FRA', 'USA', 'JPN'] -x
+BEL,URU', 'HSV', 'CIV']
+BRA,ESP', 'CRC', 'B&H'] -x
+ARG,WAL', 'SER', 'NGA']
 
-RUS, 'CHI', 'ITA', 'AUS']
-POR, 'ESP', 'USA', 'KOR']
-GER, 'COL', 'SER', 'BUR']
-BRA, 'MEX', 'EGY', 'KSA']
-BEL, 'FRA', 'IRN', 'NGA']
-SUI, 'URU', 'HSV', 'CIV']
-ARG, 'WAL', 'CRC', 'B&H']
-POL, 'ENG', 'TUN', 'JPN']
+RUS,CHI', 'ITA', 'AUS']
+POR,ESP', 'USA', 'KOR']
+GER,COL', 'SER', 'BUR']
+BRA,MEX', 'EGY', 'KSA']
+BEL,FRA', 'IRN', 'NGA']
+SUI,URU', 'HSV', 'CIV']
+ARG,WAL', 'CRC', 'B&H']
+POL,ENG', 'TUN', 'JPN']
 
-RUS, 'ESP', 'EGY', 'AUS']
-ARG, 'ENG', 'HSV', 'NGA'] -x
-POL, 'URU', 'SER', 'JPN']
-BRA, 'FRA', 'USA', 'KOR'] -x
-POR, 'MEX', 'ITA', 'CIV']
-SUI, 'COL', 'IRN', 'B&H']
-GER, 'CHI', 'TUN', 'KSA']
-BEL, 'WAL', 'CRC', 'BUR']
+RUS,ESP', 'EGY', 'AUS']
+ARG,ENG', 'HSV', 'NGA'] -x
+POL,URU', 'SER', 'JPN']
+BRA,FRA', 'USA', 'KOR'] -x
+POR,MEX', 'ITA', 'CIV']
+SUI,COL', 'IRN', 'B&H']
+GER,CHI', 'TUN', 'KSA']
+BEL,WAL', 'CRC', 'BUR']
 
-RUS, 'CHI', 'SER', 'NGA'] 
-BRA, 'ENG', 'USA', 'BUR'] -x
-POR, 'ESP', 'TUN', 'JPN'] 
-SUI, 'URU', 'EGY', 'KOR']
-GER, 'COL', 'HSV', 'AUS']
-POL, 'MEX', 'ITA', 'CIV']
-BEL, 'FRA', 'CRC', 'KSA']
-ARG, 'WAL', 'IRN', 'B&H']
+RUS,CHI', 'SER', 'NGA'] 
+BRA,ENG', 'USA', 'BUR'] -x
+POR,ESP', 'TUN', 'JPN'] 
+SUI,URU', 'EGY', 'KOR']
+GER,COL', 'HSV', 'AUS']
+POL,MEX', 'ITA', 'CIV']
+BEL,FRA', 'CRC', 'KSA']
+ARG,WAL', 'IRN', 'B&H']
 
-RUS, 'COL', 'HSV', 'CIV'] 
-BEL, 'WAL', 'CRC', 'NGA']
-POR, 'CHI', 'ITA', 'KOR']
-ARG, 'FRA', 'TUN', 'JPN'] -x
-SUI, 'ENG', 'EGY', 'KSA']
-BRA, 'ESP', 'USA', 'B&H'] -x
-POL, 'MEX', 'IRN', 'BUR']
-GER, 'URU', 'SER', 'AUS']
+RUS,COL', 'HSV', 'CIV'] 
+BEL,WAL', 'CRC', 'NGA']
+POR,CHI', 'ITA', 'KOR']
+ARG,FRA', 'TUN', 'JPN'] -x
+SUI,ENG', 'EGY', 'KSA']
+BRA,ESP', 'USA', 'B&H'] -x
+POL,MEX', 'IRN', 'BUR']
+GER,URU', 'SER', 'AUS']
 
-RUS, 'CHI', 'TUN', 'AUS']
-ARG, 'WAL', 'IRN', 'B&H']
-POL, 'MEX', 'SER', 'BUR']
-BEL, 'ESP', 'CRC', 'KSA']
-SUI, 'COL', 'HSV', 'JPN']
-GER, 'URU', 'ITA', 'CIV'] -x
-POR, 'FRA', 'EGY', 'KOR']
-BRA, 'ENG', 'USA', 'NGA'] -x
+RUS,CHI', 'TUN', 'AUS']
+ARG,WAL', 'IRN', 'B&H']
+POL,MEX', 'SER', 'BUR']
+BEL,ESP', 'CRC', 'KSA']
+SUI,COL', 'HSV', 'JPN']
+GER,URU', 'ITA', 'CIV'] -x
+POR,FRA', 'EGY', 'KOR']
+BRA,ENG', 'USA', 'NGA'] -x
 
-RUS, 'COL', 'USA', 'KOR']
-SUI, 'CHI', 'CRC', 'B&H']
-POR, 'ENG', 'TUN', 'JPN']
-GER, 'URU', 'SER', 'AUS']
-POL, 'FRA', 'EGY', 'KSA']
-ARG, 'MEX', 'ITA', 'CIV'] -x
-BRA, 'WAL', 'HSV', 'NGA']
-BEL, 'ESP', 'IRN', 'BUR']
+RUS,COL', 'USA', 'KOR']
+SUI,CHI', 'CRC', 'B&H']
+POR,ENG', 'TUN', 'JPN']
+GER,URU', 'SER', 'AUS']
+POL,FRA', 'EGY', 'KSA']
+ARG,MEX', 'ITA', 'CIV'] -x
+BRA,WAL', 'HSV', 'NGA']
+BEL,ESP', 'IRN', 'BUR']
 
-RUS, 'COL', 'ITA', 'NGA']
-BEL, 'ENG', 'CRC', 'KOR']
-POL, 'CHI', 'SER', 'BUR']
-SUI, 'MEX', 'EGY', 'B&H']
-GER, 'URU', 'HSV', 'KSA']
-BRA, 'ESP', 'IRN', 'CIV'] -x
-ARG, 'FRA', 'TUN', 'JPN'] -x
-POR, 'WAL', 'USA', 'AUS']
+RUS,COL', 'ITA', 'NGA']
+BEL,ENG', 'CRC', 'KOR']
+POL,CHI', 'SER', 'BUR']
+SUI,MEX', 'EGY', 'B&H']
+GER,URU', 'HSV', 'KSA']
+BRA,ESP', 'IRN', 'CIV'] -x
+ARG,FRA', 'TUN', 'JPN'] -x
+POR,WAL', 'USA', 'AUS']
 
-RUS, 'URU', 'SER', 'CIV']
-BEL, 'CHI', 'HSV', 'NGA']
-GER, 'COL', 'CRC', 'KOR']
-ARG, 'ESP', 'EGY', 'AUS'] -x
-POL, 'WAL', 'USA', 'BUR']
-SUI, 'FRA', 'TUN', 'JPN']
-BRA, 'ENG', 'ITA', 'KSA'] -x
-POR, 'MEX', 'IRN', 'B&H']
+RUS,URU', 'SER', 'CIV']
+BEL,CHI', 'HSV', 'NGA']
+GER,COL', 'CRC', 'KOR']
+ARG,ESP', 'EGY', 'AUS'] -x
+POL,WAL', 'USA', 'BUR']
+SUI,FRA', 'TUN', 'JPN']
+BRA,ENG', 'ITA', 'KSA'] -x
+POR,MEX', 'IRN', 'B&H']
 
-RUS, 'ESP', 'EGY', 'KSA']
-POR, 'CHI', 'SER', 'NGA']
-ARG, 'FRA', 'HSV', 'AUS'] -x
-SUI, 'URU', 'USA', 'BUR']
-POL, 'ENG', 'IRN', 'CIV']
-BRA, 'WAL', 'CRC', 'KOR']
-BEL, 'MEX', 'TUN', 'B&H']
-GER, 'COL', 'ITA', 'JPN'] -x
-RUS, 'ENG', 'TUN', 'AUS']
-BRA, 'ESP', 'USA', 'KOR'] -x
-SUI, 'URU', 'ITA', 'BUR'] -False
-GER, 'CHI', 'HSV', 'NGA']
-POR, 'COL', 'SER', 'KSA']
-BEL, 'MEX', 'EGY', 'B&H']
-ARG, 'WAL', 'CRC', 'JPN']
-POL, 'FRA', 'IRN', 'CIV']
-RUS, 'URU', 'HSV', 'CIV']
-POR, 'CHI', 'SER', 'JPN']
-ARG, 'ESP', 'TUN', 'B&H'] -x
-SUI, 'COL', 'USA', 'NGA']
-GER, 'MEX', 'ITA', 'KSA'] -x
-POL, 'ENG', 'EGY', 'KOR']
-BRA, 'WAL', 'CRC', 'AUS']
-BEL, 'FRA', 'IRN', 'BUR']
-RUS, 'CHI', 'ITA', 'AUS']
-BRA, 'ENG', 'EGY', 'JPN']
-POR, 'WAL', 'USA', 'BUR']
-SUI, 'URU', 'IRN', 'B&H']
-BEL, 'ESP', 'CRC', 'NGA'] -x
-ARG, 'MEX', 'HSV', 'KSA']
-POL, 'FRA', 'TUN', 'KOR']
-GER, 'COL', 'SER', 'CIV']
-RUS, 'COL', 'HSV', 'KSA']
-GER, 'CHI', 'CRC', 'BUR']
-BEL, 'MEX', 'SER', 'KOR']
-BRA, 'ESP', 'USA', 'B&H'] -x
-POR, 'ENG', 'TUN', 'JPN']
-SUI, 'URU', 'IRN', 'NGA']
-POL, 'WAL', 'EGY', 'AUS']
-ARG, 'FRA', 'ITA', 'CIV'] -x
-RUS, 'ENG', 'USA', 'AUS']
-SUI, 'CHI', 'IRN', 'BUR']
-GER, 'FRA', 'CRC', 'NGA'] -x
-POL, 'COL', 'TUN', 'B&H']
-BEL, 'MEX', 'EGY', 'KSA']
-POR, 'URU', 'ITA', 'CIV'] 
-ARG, 'WAL', 'SER', 'JPN']
-BRA, 'ESP', 'HSV', 'KOR'] -x
-RUS, 'CHI', 'ITA', 'NGA']
-BEL, 'MEX', 'IRN', 'BUR']
-SUI, 'URU', 'HSV', 'KSA']
-GER, 'COL', 'SER', 'KOR']
-POL, 'WAL', 'TUN', 'JPN']
-BRA, 'ENG', 'CRC', 'CIV'] -x
-ARG, 'FRA', 'USA', 'B&H'] -x
-POR, 'ESP', 'EGY', 'AUS']
-RUS, 'WAL', 'CRC', 'BUR']
-GER, 'COL', 'IRN', 'NGA']
-SUI, 'URU', 'HSV', 'JPN']
-ARG, 'FRA', 'SER', 'KSA'] -x
-POL, 'ESP', 'USA', 'AUS']
-BRA, 'ENG', 'EGY', 'KOR']
-POR, 'MEX', 'TUN', 'B&H']
-BEL, 'CHI', 'ITA', 'CIV']
-RUS, 'URU', 'SER', 'KOR']
-ARG, 'WAL', 'IRN', 'B&H']
-GER, 'ENG', 'EGY', 'KSA']
-POL, 'CHI', 'HSV', 'CIV']
-POR, 'MEX', 'TUN', 'AUS']
-BRA, 'ESP', 'ITA', 'JPN'] -x
-BEL, 'COL', 'USA', 'BUR']
-SUI, 'FRA', 'CRC', 'NGA']
-RUS, 'MEX', 'ITA', 'JPN']
-SUI, 'CHI', 'HSV', 'KOR']
-POL, 'COL', 'SER', 'NGA']
-POR, 'FRA', 'TUN', 'AUS']
-BEL, 'URU', 'CRC', 'BUR']
-ARG, 'ENG', 'USA', 'CIV'] -x
-GER, 'WAL', 'EGY', 'KSA']
-BRA, 'ESP', 'IRN', 'B&H'] -x
-RUS, 'ENG', 'EGY', 'AUS']
-POL, 'FRA', 'USA', 'KOR']
-BEL, 'CHI', 'CRC', 'KSA']
-ARG, 'MEX', 'TUN', 'B&H']
-SUI, 'COL', 'ITA', 'NGA']
-BRA, 'ESP', 'SER', 'JPN'] -x
-GER, 'URU', 'HSV', 'BUR']
-POR, 'WAL', 'IRN', 'CIV']
-RUS, 'COL', 'EGY', 'B&H']
-POL, 'CHI', 'CRC', 'CIV']
-BEL, 'WAL', 'USA', 'NGA']
-ARG, 'ENG', 'ITA', 'KOR'] -x
-BRA, 'FRA', 'TUN', 'KSA'] 
-POR, 'URU', 'HSV', 'JPN']
-SUI, 'MEX', 'SER', 'AUS']
-GER, 'ESP', 'IRN', 'BUR'] 
-RUS, 'CHI', 'CRC', 'BUR']
-ARG, 'ESP', 'ITA', 'KSA'] -x
-SUI, 'FRA', 'IRN', 'NGA']
-POR, 'COL', 'USA', 'B&H']
-BRA, 'MEX', 'SER', 'CIV']
+RUS,ESP', 'EGY', 'KSA']
+POR,CHI', 'SER', 'NGA']
+ARG,FRA', 'HSV', 'AUS'] -x
+SUI,URU', 'USA', 'BUR']
+POL,ENG', 'IRN', 'CIV']
+BRA,WAL', 'CRC', 'KOR']
+BEL,MEX', 'TUN', 'B&H']
+GER,COL', 'ITA', 'JPN'] -x
+RUS,ENG', 'TUN', 'AUS']
+BRA,ESP', 'USA', 'KOR'] -x
+SUI,URU', 'ITA', 'BUR'] -False
+GER,CHI', 'HSV', 'NGA']
+POR,COL', 'SER', 'KSA']
+BEL,MEX', 'EGY', 'B&H']
+ARG,WAL', 'CRC', 'JPN']
+POL,FRA', 'IRN', 'CIV']
+RUS,URU', 'HSV', 'CIV']
+POR,CHI', 'SER', 'JPN']
+ARG,ESP', 'TUN', 'B&H'] -x
+SUI,COL', 'USA', 'NGA']
+GER,MEX', 'ITA', 'KSA'] -x
+POL,ENG', 'EGY', 'KOR']
+BRA,WAL', 'CRC', 'AUS']
+BEL,FRA', 'IRN', 'BUR']
+RUS,CHI', 'ITA', 'AUS']
+BRA,ENG', 'EGY', 'JPN']
+POR,WAL', 'USA', 'BUR']
+SUI,URU', 'IRN', 'B&H']
+BEL,ESP', 'CRC', 'NGA'] -x
+ARG,MEX', 'HSV', 'KSA']
+POL,FRA', 'TUN', 'KOR']
+GER,COL', 'SER', 'CIV']
+RUS,COL', 'HSV', 'KSA']
+GER,CHI', 'CRC', 'BUR']
+BEL,MEX', 'SER', 'KOR']
+BRA,ESP', 'USA', 'B&H'] -x
+POR,ENG', 'TUN', 'JPN']
+SUI,URU', 'IRN', 'NGA']
+POL,WAL', 'EGY', 'AUS']
+ARG,FRA', 'ITA', 'CIV'] -x
+RUS,ENG', 'USA', 'AUS']
+SUI,CHI', 'IRN', 'BUR']
+GER,FRA', 'CRC', 'NGA'] -x
+POL,COL', 'TUN', 'B&H']
+BEL,MEX', 'EGY', 'KSA']
+POR,URU', 'ITA', 'CIV'] 
+ARG,WAL', 'SER', 'JPN']
+BRA,ESP', 'HSV', 'KOR'] -x
+RUS,CHI', 'ITA', 'NGA']
+BEL,MEX', 'IRN', 'BUR']
+SUI,URU', 'HSV', 'KSA']
+GER,COL', 'SER', 'KOR']
+POL,WAL', 'TUN', 'JPN']
+BRA,ENG', 'CRC', 'CIV'] -x
+ARG,FRA', 'USA', 'B&H'] -x
+POR,ESP', 'EGY', 'AUS']
+RUS,WAL', 'CRC', 'BUR']
+GER,COL', 'IRN', 'NGA']
+SUI,URU', 'HSV', 'JPN']
+ARG,FRA', 'SER', 'KSA'] -x
+POL,ESP', 'USA', 'AUS']
+BRA,ENG', 'EGY', 'KOR']
+POR,MEX', 'TUN', 'B&H']
+BEL,CHI', 'ITA', 'CIV']
+RUS,URU', 'SER', 'KOR']
+ARG,WAL', 'IRN', 'B&H']
+GER,ENG', 'EGY', 'KSA']
+POL,CHI', 'HSV', 'CIV']
+POR,MEX', 'TUN', 'AUS']
+BRA,ESP', 'ITA', 'JPN'] -x
+BEL,COL', 'USA', 'BUR']
+SUI,FRA', 'CRC', 'NGA']
+RUS,MEX', 'ITA', 'JPN']
+SUI,CHI', 'HSV', 'KOR']
+POL,COL', 'SER', 'NGA']
+POR,FRA', 'TUN', 'AUS']
+BEL,URU', 'CRC', 'BUR']
+ARG,ENG', 'USA', 'CIV'] -x
+GER,WAL', 'EGY', 'KSA']
+BRA,ESP', 'IRN', 'B&H'] -x
+RUS,ENG', 'EGY', 'AUS']
+POL,FRA', 'USA', 'KOR']
+BEL,CHI', 'CRC', 'KSA']
+ARG,MEX', 'TUN', 'B&H']
+SUI,COL', 'ITA', 'NGA']
+BRA,ESP', 'SER', 'JPN'] -x
+GER,URU', 'HSV', 'BUR']
+POR,WAL', 'IRN', 'CIV']
+RUS,COL', 'EGY', 'B&H']
+POL,CHI', 'CRC', 'CIV']
+BEL,WAL', 'USA', 'NGA']
+ARG,ENG', 'ITA', 'KOR'] -x
+BRA,FRA', 'TUN', 'KSA'] 
+POR,URU', 'HSV', 'JPN']
+SUI,MEX', 'SER', 'AUS']
+GER,ESP', 'IRN', 'BUR'] 
+RUS,CHI', 'CRC', 'BUR']
+ARG,ESP', 'ITA', 'KSA'] -x
+SUI,FRA', 'IRN', 'NGA']
+POR,COL', 'USA', 'B&H']
+BRA,MEX', 'SER', 'CIV']
 BEL, 'WAL', 'EGY', 'AUS']
 POL, 'URU', 'HSV', 'JPN']
 GER, 'ENG', 'TUN', 'KOR']
