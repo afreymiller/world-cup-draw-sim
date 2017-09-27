@@ -114,7 +114,7 @@ def get_opponents_dict(team, groups):
     return counts
 
 def __main__():
-    groups = clean_groups("groups_only.txt")
+    groups = clean_groups("draws.txt")
     
     opponents = get_opponents_dict("USA", groups)
     print(opponents)
