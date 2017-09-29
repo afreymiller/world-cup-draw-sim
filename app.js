@@ -11,10 +11,15 @@
             {'name': "G", 'One': "G1", 'Two': "G2", 'Three': "G3", 'Four': "G4"},
             {'name': "H", 'One': "H1", 'Two': "H2", 'Three': "H3", 'Four': "H4"},
         ],
-        'Pot1': ["GER", "ARG", "BRA", "POR", "SUI", "POL", "CHI", "RUS"],
-        'Pot2': ["DRC", "NGA", "CIV", "BUR", "EGP", "URU", "COL", "IRE"],
-        'Pot3': ["MEX", "CRC", "USA", "AUS", "IRN", "KOR", "JPN", "KSA"],
-        'Pot4': ["SWE", "SER", "ENG", "FRA", "ESP", "BEL", "CRO", "GRE"]
+        'pots': [ {"teams": [{'name': "GER"}, {'name': "ARG"}, {'name': "BRA"}, {'name': "POR"}, 
+             {'name': "SUI"}, {'name': "POL"}, {'name': "CHI"}, {'name': "RUS"}]}, 
+             {"teams": [{'name': "DRC"}, {'name': "NGA"}, {'name': "CIV"}, {'name': "BUR"}, 
+             {'name': "EGP"}, {'name': "URU"}, {'name': "COL"}, {'name': "IRE"}]},
+             {"teams": [{'name': "MEX"}, {'name': "CRC"}, {'name': "USA"}, {'name': "AUS"}, 
+             {'name': "IRN"}, {'name': "KOR"}, {'name': "JPN"}, {'name': "KSA"}]},
+             {"teams": [{'name': "SWE"}, {'name': "SER"}, {'name': "ENG"}, {'name': "FRA"}, 
+             {'name': "ESP"}, {'name': "BEL"}, {'name': "CRO"}, {'name': "GRE"}]}   
+        ]
     }, 
     'methods': {
         'emptyPot': function(pot) {

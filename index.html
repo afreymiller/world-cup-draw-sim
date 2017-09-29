@@ -8,43 +8,13 @@
     <div id="app">
         <div class="grid-container outline">
            <div class = "row">
-                <div class = "col-1">
+                <div class = "col-1" v-for="(pot, index) in pots">
                     <div class="div-table">
                         <div class="div-table-row">
-                            <div class="div-table-col" align="center">Pot 1</div>
+                            <div class="div-table-col" align="center">Pot {{index+1}}</div>
                         </div>
-                        <div class="div-table-row" v-for="team in Pot1">
-                            <div class="div-table-col">{{team}}</div>
-                        </div>
-                    </div>
-                </div>
-                <div class = "col-1">
-                    <div class="div-table">
-                        <div class="div-table-row">
-                            <div class="div-table-col" align="center">Pot 2</div>
-                        </div>
-                        <div class="div-table-row" v-for="team in Pot2">
-                            <div class="div-table-col">{{team}}</div>
-                        </div>
-                    </div>
-                </div>
-               <div class = "col-1">
-                    <div class="div-table">
-                        <div class="div-table-row">
-                            <div class="div-table-col" align="center">Pot 3</div>
-                        </div>
-                        <div class="div-table-row" v-for="team in Pot3">
-                            <div class="div-table-col">{{team}}</div>
-                        </div>
-                    </div>
-                </div>
-                <div class = "col-1">
-                    <div class="div-table">
-                        <div class="div-table-row">
-                            <div class="div-table-col" align="center">Pot 4</div>
-                        </div>
-                        <div class="div-table-row" v-for="team in Pot4">
-                            <div class="div-table-col">{{team}}</div>
+                        <div class="div-table-row" v-for="team in pot.teams">
+                            <div class="div-table-col">{{team.name}}</div>
                         </div>
                     </div>
                 </div>
