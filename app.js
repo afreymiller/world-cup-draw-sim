@@ -50,8 +50,8 @@
             this.Pot3 = ["MEX", "CRC", "USA", "AUS", "IRN", "KOR", "JPN", "KSA"],
             this.Pot4 = ["SWE", "SER", "ENG", "FRA", "ESP", "BEL", "CRO", "GRE"]
         },
-        'getGroupAImgPath': function() {
-            return 'img/GER.jpg';
+        'getA1ImgPath': function() {
+            return 'img/' + this.A.One + '.jpg';
         }
     }
 })
