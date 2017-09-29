@@ -1,10 +1,8 @@
 <html>
   <head>
-    <!-- these scripts should be loaded in some way other than CDNs -->
     <link rel = "stylesheet" type = "text/css" href = "style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.10/vue.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vuex/2.1.1/vuex.min.js"></script>
-    
   </head>
   <body>
     <div id="app">
@@ -15,29 +13,8 @@
                         <div class="div-table-row">
                             <div class="div-table-col" align="center">Pot 1</div>
                         </div>
-                        <div class="div-table-row">
-                            <div class="div-table-col">GER</div>
-                        </div>
-                        <div class="div-table-row">
-                            <div class="div-table-col">ARG</div>
-                        </div>
-                        <div class="div-table-row">
-                            <div class="div-table-col">BRA</div>
-                        </div>
-                        <div class="div-table-row">
-                            <div class="div-table-col">POR</div>
-                        </div>
-                        <div class="div-table-row">
-                            <div class="div-table-col">SUI</div>
-                        </div>
-                        <div class="div-table-row">
-                            <div class="div-table-col">POL</div>
-                        </div>
-                        <div class="div-table-row">
-                            <div class="div-table-col">CHI</div>
-                        </div>
-                        <div class="div-table-row">
-                            <div class="div-table-col">RUS</div>
+                        <div class="div-table-row" v-for="team in Pot1">
+                            <div class="div-table-col">{{team}}</div>
                         </div>
                     </div>
                 </div>
@@ -46,60 +23,18 @@
                         <div class="div-table-row">
                             <div class="div-table-col" align="center">Pot 2</div>
                         </div>
-                        <div class="div-table-row">
-                            <div class="div-table-col">DRC</div>
-                        </div>
-                        <div class="div-table-row">
-                            <div class="div-table-col">NGA</div>
-                        </div>
-                        <div class="div-table-row">
-                            <div class="div-table-col">CIV</div>
-                        </div>
-                        <div class="div-table-row">
-                            <div class="div-table-col">BUR</div>
-                        </div>
-                        <div class="div-table-row">
-                            <div class="div-table-col">EGP</div>
-                        </div>
-                        <div class="div-table-row">
-                            <div class="div-table-col">URU</div>
-                        </div>
-                        <div class="div-table-row">
-                            <div class="div-table-col">COL</div>
-                        </div>
-                        <div class="div-table-row">
-                            <div class="div-table-col">IRE</div>
+                        <div class="div-table-row" v-for="team in Pot2">
+                            <div class="div-table-col">{{team}}</div>
                         </div>
                     </div>
                 </div>
-                <div class = "col-1">
+               <div class = "col-1">
                     <div class="div-table">
                         <div class="div-table-row">
                             <div class="div-table-col" align="center">Pot 3</div>
                         </div>
-                        <div class="div-table-row">
-                            <div class="div-table-col">MEX</div>
-                        </div>
-                        <div class="div-table-row">
-                            <div class="div-table-col">CRC</div>
-                        </div>
-                        <div class="div-table-row">
-                            <div class="div-table-col">USA</div>
-                        </div>
-                        <div class="div-table-row">
-                            <div class="div-table-col">AUS</div>
-                        </div>
-                        <div class="div-table-row">
-                            <div class="div-table-col">IRN</div>
-                        </div>
-                        <div class="div-table-row">
-                            <div class="div-table-col">KOR</div>
-                        </div>
-                        <div class="div-table-row">
-                            <div class="div-table-col">JPN</div>
-                        </div>
-                        <div class="div-table-row">
-                            <div class="div-table-col">KSA</div>
+                        <div class="div-table-row" v-for="team in Pot3">
+                            <div class="div-table-col">{{team}}</div>
                         </div>
                     </div>
                 </div>
@@ -108,29 +43,8 @@
                         <div class="div-table-row">
                             <div class="div-table-col" align="center">Pot 4</div>
                         </div>
-                        <div class="div-table-row">
-                            <div class="div-table-col">SWE</div>
-                        </div>
-                        <div class="div-table-row">
-                            <div class="div-table-col">SER</div>
-                        </div>
-                        <div class="div-table-row">
-                            <div class="div-table-col">ENG</div>
-                        </div>
-                        <div class="div-table-row">
-                            <div class="div-table-col">FRA</div>
-                        </div>
-                        <div class="div-table-row">
-                            <div class="div-table-col">ESP</div>
-                        </div>
-                        <div class="div-table-row">
-                            <div class="div-table-col">BEL</div>
-                        </div>
-                        <div class="div-table-row">
-                            <div class="div-table-col">CRO</div>
-                        </div>
-                        <div class="div-table-row">
-                            <div class="div-table-col">GRE</div>
+                        <div class="div-table-row" v-for="team in Pot4">
+                            <div class="div-table-col">{{team}}</div>
                         </div>
                     </div>
                 </div>
