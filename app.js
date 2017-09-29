@@ -1,14 +1,16 @@
  new Vue({
     'el': '#app',
     'data': {
-        'A': {'One': "A1", 'Two': "A2", 'Three': "A3", 'Four': "A4"},
-        'B': {'One': "B1", 'Two': "B2", 'Three': "B3", 'Four': "B4"},
-        'C': {'One': "C1", 'Two': "C2", 'Three': "C3", 'Four': "C4"},
-        'D': {'One': "D1", 'Two': "D2", 'Three': "D3", 'Four': "D4"},
-        'E': {'One': "E1", 'Two': "E2", 'Three': "E3", 'Four': "E4"},
-        'F': {'One': "F1", 'Two': "F2", 'Three': "F3", 'Four': "F4"},
-        'G': {'One': "G1", 'Two': "G2", 'Three': "G3", 'Four': "G4"},
-        'H': {'One': "H1", 'Two': "H2", 'Three': "H3", 'Four': "H4"},
+        'groups': [
+            {'name': "A", 'One': "A1", 'Two': "A2", 'Three': "A3", 'Four': "A4"},
+            {'name': "B", 'One': "B1", 'Two': "B2", 'Three': "B3", 'Four': "B4"},
+            {'name': "C", 'One': "C1", 'Two': "C2", 'Three': "C3", 'Four': "C4"},
+            {'name': "D", 'One': "D1", 'Two': "D2", 'Three': "D3", 'Four': "D4"},
+            {'name': "E", 'One': "E1", 'Two': "E2", 'Three': "E3", 'Four': "E4"},
+            {'name': "F", 'One': "F1", 'Two': "F2", 'Three': "F3", 'Four': "F4"},
+            {'name': "G", 'One': "G1", 'Two': "G2", 'Three': "G3", 'Four': "G4"},
+            {'name': "H", 'One': "H1", 'Two': "H2", 'Three': "H3", 'Four': "H4"},
+        ],
         'Pot1': ["GER", "ARG", "BRA", "POR", "SUI", "POL", "CHI", "RUS"],
         'Pot2': ["DRC", "NGA", "CIV", "BUR", "EGP", "URU", "COL", "IRE"],
         'Pot3': ["MEX", "CRC", "USA", "AUS", "IRN", "KOR", "JPN", "KSA"],
@@ -16,14 +18,14 @@
     }, 
     'methods': {
         'emptyPot': function(pot) {
-            setTimeout(() => this.A[pot] = this.popTeam(pot)[0], 200);
-            setTimeout(() => this.B[pot] = this.popTeam(pot)[0], 400);
-            setTimeout(() => this.C[pot] = this.popTeam(pot)[0], 600);
-            setTimeout(() => this.D[pot] = this.popTeam(pot)[0], 900);
-            setTimeout(() => this.E[pot] = this.popTeam(pot)[0], 1000);
-            setTimeout(() => this.F[pot] = this.popTeam(pot)[0], 1200);
-            setTimeout(() => this.G[pot] = this.popTeam(pot)[0], 1400);
-            setTimeout(() => this.H[pot] = this.popTeam(pot)[0], 1600);
+            setTimeout(() => this.groups[0][pot] = this.popTeam(pot)[0], 200);
+            setTimeout(() => this.groups[1][pot] = this.popTeam(pot)[0], 400);
+            setTimeout(() => this.groups[2][pot] = this.popTeam(pot)[0], 600);
+            setTimeout(() => this.groups[3][pot] = this.popTeam(pot)[0], 900);
+            setTimeout(() => this.groups[4][pot] = this.popTeam(pot)[0], 1000);
+            setTimeout(() => this.groups[5][pot] = this.popTeam(pot)[0], 1200);
+            setTimeout(() => this.groups[6][pot] = this.popTeam(pot)[0], 1400);
+            setTimeout(() => this.groups[7][pot] = this.popTeam(pot)[0], 1600);
         },
         'popTeam': function(pot) {
             switch (pot) {
@@ -49,9 +51,6 @@
             this.Pot2 = ["DRC", "NGA", "CIV", "BUR", "EGP", "URU", "COL", "IRE"],
             this.Pot3 = ["MEX", "CRC", "USA", "AUS", "IRN", "KOR", "JPN", "KSA"],
             this.Pot4 = ["SWE", "SER", "ENG", "FRA", "ESP", "BEL", "CRO", "GRE"]
-        },
-        'getA1ImgPath': function() {
-            return 'img/' + this.A.One + '.jpg';
         }
     }
 })
