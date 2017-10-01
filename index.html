@@ -8,17 +8,17 @@
     <div id="app">
         <div class="grid-container outline">
            <div class = "row">
-                <div class = "col-8" v-for="(pot, index) in pots">
+                <div class = "col-8 pots" v-for="(pot, index) in pots">
                     <p>Pot {{index+1}}</p>
                     <div class="div-table">
                         <div class="div-table-col" v-for="team in pot.teams">
-                            <img :src="getImgPath(team.name)" class = "flag-icon"></img>
+                            <img :src="getImgPath(team.name)" class="flag-icon" v-bind:class="{'flag-chosen': teamIsChosen(team.name, index)}"></img>
                             <div class="div-table-col team-name">{{team.name}}</div>
                         </div>
                     </div>
                     <br>
                 </div>
-                <div class="col-4">
+                <div class="col-4 groups">
                     <div v-for="group in groups">
                        <div class = "col-1">
                             {{group.One}}
@@ -35,9 +35,7 @@
                     </div>
                 </div> 
            </div>
-            <br><br>
-            <button v-on:click="buttonClick">Simulate Draw</button>
-            <br><br>
+            <button v-on:click="buttonClick" class="draw-button">Simulate Draw</button>
         </div>
     </div> 
     <script src="app.js"></script> 

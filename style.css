@@ -10,6 +10,22 @@
     text-align: center;
 }
 
+.pots {
+    position: relative;
+    right: 60px;
+}
+
+.groups {
+    position: relative;
+    bottom: 300px;
+}
+
+.draw-button {
+    position: relative;
+    bottom: 450px;
+    left: 60%;
+}
+
 @media all and (max-width:800px){
         .col-1{ width: 33.33%;    }
         .col-2{ width: 50%;        }

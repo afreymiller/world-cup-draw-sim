@@ -1,6 +1,7 @@
 new Vue({
     'el': '#app',
     'data': {
+
         'groups': [
             {'name': "A", 'One': "A1", 'Two': "A2", 'Three': "A3", 'Four': "A4"},
             {'name': "B", 'One': "B1", 'Two': "B2", 'Three': "B3", 'Four': "B4"},
@@ -11,22 +12,22 @@ new Vue({
             {'name': "G", 'One': "G1", 'Two': "G2", 'Three': "G3", 'Four': "G4"},
             {'name': "H", 'One': "H1", 'Two': "H2", 'Three': "H3", 'Four': "H4"},
         ],
-        'pots': [ {"teams": [{'name': "GER", 'path': null}, {'name': "ARG", 'path': null}, {'name': "BRA", 'path': null}, {'name': "POR", 'path': null}, 
+        'pots': [ { "teams": [{'name': "GER", 'path': null}, {'name': "ARG", 'path': null}, {'name': "BRA", 'path': null}, {'name': "POR", 'path': null}, 
                              {'name': "SUI", 'path': null}, {'name': "POL", 'path': null}, {'name': "CHI", 'path': null}, {'name': "RUS", 'path': null}]}, 
-                  {"teams": [{'name': "DRC", 'path': null}, {'name': "NGA", 'path': null}, {'name': "CIV", 'path': null}, {'name': "BUR", 'path': null}, 
+                  { "teams": [{'name': "DRC", 'path': null}, {'name': "NGA", 'path': null}, {'name': "CIV", 'path': null}, {'name': "BUR", 'path': null}, 
                              {'name': "EGY", 'path': null}, {'name': "URU", 'path': null}, {'name': "COL", 'path': null}, {'name': "IRE", 'path': null}]},
-                  {"teams": [{'name': "MEX", 'path': null}, {'name': "CRC", 'path': null}, {'name': "USA", 'path': null}, {'name': "AUS", 'path': null}, 
+                  { "teams": [{'name': "MEX", 'path': null}, {'name': "CRC", 'path': null}, {'name': "USA", 'path': null}, {'name': "AUS", 'path': null}, 
                              {'name': "IRN", 'path': null}, {'name': "KOR", 'path': null}, {'name': "JPN", 'path': null}, {'name': "KSA", 'path': null}]},
-                  {"teams": [{'name': "SWE", 'path': null}, {'name': "SER", 'path': null}, {'name': "ENG", 'path': null}, {'name': "FRA", 'path': null}, 
+                  { "teams": [{'name': "SWE", 'path': null}, {'name': "SER", 'path': null}, {'name': "ENG", 'path': null}, {'name': "FRA", 'path': null}, 
                              {'name': "ESP", 'path': null}, {'name': "BEL", 'path': null}, {'name': "CRO", 'path': null}, {'name': "GRE", 'path': null}]}   
         ]
-    }, 
+    },
     'methods': {
         'emptyPot': function(pot) {
             setTimeout(() => this.groups[0][pot] = this.popTeam(pot)[0], 200);
             setTimeout(() => this.groups[1][pot] = this.popTeam(pot)[0], 400);
             setTimeout(() => this.groups[2][pot] = this.popTeam(pot)[0], 600);
-            setTimeout(() => this.groups[3][pot] = this.popTeam(pot)[0], 900);
+            setTimeout(() => this.groups[3][pot] = this.popTeam(pot)[0], 800);
             setTimeout(() => this.groups[4][pot] = this.popTeam(pot)[0], 1000);
             setTimeout(() => this.groups[5][pot] = this.popTeam(pot)[0], 1200);
             setTimeout(() => this.groups[6][pot] = this.popTeam(pot)[0], 1400);
@@ -45,6 +46,10 @@ new Vue({
                 default:
                     break;
             }
+        },
+        'teamIsChosen': function(team, index) {
+            console.log(team);
+            return true;
         },
         'buttonClick': function() {
             setTimeout(() => this.emptyPot("One"), 0);
