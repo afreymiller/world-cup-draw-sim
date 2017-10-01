@@ -14,7 +14,7 @@ new Vue({
         'pots': [ {"teams": [{'name': "GER", 'path': null}, {'name': "ARG", 'path': null}, {'name': "BRA", 'path': null}, {'name': "POR", 'path': null}, 
                              {'name': "SUI", 'path': null}, {'name': "POL", 'path': null}, {'name': "CHI", 'path': null}, {'name': "RUS", 'path': null}]}, 
                   {"teams": [{'name': "DRC", 'path': null}, {'name': "NGA", 'path': null}, {'name': "CIV", 'path': null}, {'name': "BUR", 'path': null}, 
-                             {'name': "EGP", 'path': null}, {'name': "URU", 'path': null}, {'name': "COL", 'path': null}, {'name': "IRE", 'path': null}]},
+                             {'name': "EGY", 'path': null}, {'name': "URU", 'path': null}, {'name': "COL", 'path': null}, {'name': "IRE", 'path': null}]},
                   {"teams": [{'name': "MEX", 'path': null}, {'name': "CRC", 'path': null}, {'name': "USA", 'path': null}, {'name': "AUS", 'path': null}, 
                              {'name': "IRN", 'path': null}, {'name': "KOR", 'path': null}, {'name': "JPN", 'path': null}, {'name': "KSA", 'path': null}]},
                   {"teams": [{'name': "SWE", 'path': null}, {'name': "SER", 'path': null}, {'name': "ENG", 'path': null}, {'name': "FRA", 'path': null}, 
