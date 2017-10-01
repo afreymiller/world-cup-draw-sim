@@ -8,16 +8,15 @@
     <div id="app">
         <div class="grid-container outline">
            <div class = "row">
-                <div class = "col-1" v-for="(pot, index) in pots">
+                <div class = "col-16" v-for="(pot, index) in pots">
+                    <p>Pot {{index+1}}</p>
                     <div class="div-table">
-                        <div class="div-table-row">
-                            <div class="div-table-col" align="center">Pot {{index+1}}</div>
-                        </div>
-                        <div class="div-table-row" v-for="team in pot.teams">
-                            <img :src="getImgPath(team.name)"></img>
-                            <div class="div-table-col">{{team.name}}</div>
+                        <div class="div-table-col" v-for="team in pot.teams">
+                            <img :src="getImgPath(team.name)" class = "flag-icon"></img>
+                            <div class="div-table-col team-name">{{team.name}}</div>
                         </div>
                     </div>
+                    <br>
                 </div>
             </div>
             <br><br>
