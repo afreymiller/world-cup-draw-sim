@@ -1,4 +1,4 @@
- new Vue({
+new Vue({
     'el': '#app',
     'data': {
         'groups': [
@@ -11,14 +11,14 @@
             {'name': "G", 'One': "G1", 'Two': "G2", 'Three': "G3", 'Four': "G4"},
             {'name': "H", 'One': "H1", 'Two': "H2", 'Three': "H3", 'Four': "H4"},
         ],
-        'pots': [ {"teams": [{'name': "GER"}, {'name': "ARG"}, {'name': "BRA"}, {'name': "POR"}, 
-             {'name': "SUI"}, {'name': "POL"}, {'name': "CHI"}, {'name': "RUS"}]}, 
-             {"teams": [{'name': "DRC"}, {'name': "NGA"}, {'name': "CIV"}, {'name': "BUR"}, 
-             {'name': "EGP"}, {'name': "URU"}, {'name': "COL"}, {'name': "IRE"}]},
-             {"teams": [{'name': "MEX"}, {'name': "CRC"}, {'name': "USA"}, {'name': "AUS"}, 
-             {'name': "IRN"}, {'name': "KOR"}, {'name': "JPN"}, {'name': "KSA"}]},
-             {"teams": [{'name': "SWE"}, {'name': "SER"}, {'name': "ENG"}, {'name': "FRA"}, 
-             {'name': "ESP"}, {'name': "BEL"}, {'name': "CRO"}, {'name': "GRE"}]}   
+        'pots': [ {"teams": [{'name': "GER", 'path': null}, {'name': "ARG", 'path': null}, {'name': "BRA", 'path': null}, {'name': "POR", 'path': null}, 
+                             {'name': "SUI", 'path': null}, {'name': "POL", 'path': null}, {'name': "CHI", 'path': null}, {'name': "RUS", 'path': null}]}, 
+                  {"teams": [{'name': "DRC", 'path': null}, {'name': "NGA", 'path': null}, {'name': "CIV", 'path': null}, {'name': "BUR", 'path': null}, 
+                             {'name': "EGP", 'path': null}, {'name': "URU", 'path': null}, {'name': "COL", 'path': null}, {'name': "IRE", 'path': null}]},
+                  {"teams": [{'name': "MEX", 'path': null}, {'name': "CRC", 'path': null}, {'name': "USA", 'path': null}, {'name': "AUS", 'path': null}, 
+                             {'name': "IRN", 'path': null}, {'name': "KOR", 'path': null}, {'name': "JPN", 'path': null}, {'name': "KSA", 'path': null}]},
+                  {"teams": [{'name': "SWE", 'path': null}, {'name': "SER", 'path': null}, {'name': "ENG", 'path': null}, {'name': "FRA", 'path': null}, 
+                             {'name': "ESP", 'path': null}, {'name': "BEL", 'path': null}, {'name': "CRO", 'path': null}, {'name': "GRE", 'path': null}]}   
         ]
     }, 
     'methods': {
@@ -56,6 +56,9 @@
             this.Pot2 = ["DRC", "NGA", "CIV", "BUR", "EGP", "URU", "COL", "IRE"],
             this.Pot3 = ["MEX", "CRC", "USA", "AUS", "IRN", "KOR", "JPN", "KSA"],
             this.Pot4 = ["SWE", "SER", "ENG", "FRA", "ESP", "BEL", "CRO", "GRE"]
+        },
+        'getImgPath': function(team) {
+            return 'img/' + team + '.jpg';
         }
     }
 })

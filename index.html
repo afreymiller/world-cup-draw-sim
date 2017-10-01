@@ -14,6 +14,7 @@
                             <div class="div-table-col" align="center">Pot {{index+1}}</div>
                         </div>
                         <div class="div-table-row" v-for="team in pot.teams">
+                            <img :src="getImgPath(team.name)"></img>
                             <div class="div-table-col">{{team.name}}</div>
                         </div>
                     </div>
