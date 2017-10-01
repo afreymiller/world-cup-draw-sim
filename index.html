@@ -18,31 +18,26 @@
                     </div>
                     <br>
                 </div>
-            </div>
+                <div class="col-4">
+                    <div v-for="group in groups">
+                       <div class = "col-1">
+                            {{group.One}}
+                        </div>
+                        <div class = "col-1">
+                            {{group.Two}}
+                        </div>
+                        <div class = "col-1">
+                            {{group.Three}}
+                        </div>
+                        <div class = "col-1">
+                            {{group.Four}}
+                        </div> 
+                    </div>
+                </div> 
+           </div>
             <br><br>
             <button v-on:click="buttonClick">Simulate Draw</button>
             <br><br>
-            <div class="row">
-                <div class="col-1" v-for="group in groups">
-                    <div class="div-table">
-                        <div class="div-table-row">
-                            <div class="div-table-col" align="center">{{group.name}}</div>
-                        </div>
-                        <div class="div-table-row">
-                            <div class="div-table-col">{{group.One}}</div>
-                        </div>
-                        <div class="div-table-row">
-                            <div class="div-table-col">{{group.Two}}</div>
-                        </div>
-                        <div class="div-table-row">
-                            <div class="div-table-col">{{group.Three}}</div>
-                        </div>
-                        <div class="div-table-row">
-                            <div class="div-table-col">{{group.Four}}</div>
-                        </div>
-                    </div>
-                </div> 
-            </div>  
         </div>
     </div> 
     <script src="app.js"></script> 
