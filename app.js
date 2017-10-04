@@ -40,14 +40,30 @@ new Vue({
     },
     'methods': {
         'emptyPot': function(pot) {
-            setTimeout(() => this.groups[0][pot] = this.selectTeam(pot), 200);
-            setTimeout(() => this.groups[1][pot] = this.selectTeam(pot), 400);
-            setTimeout(() => this.groups[2][pot] = this.selectTeam(pot), 600);
-            setTimeout(() => this.groups[3][pot] = this.selectTeam(pot), 800);
-            setTimeout(() => this.groups[4][pot] = this.selectTeam(pot), 1000);
-            setTimeout(() => this.groups[5][pot] = this.selectTeam(pot), 1200);
-            setTimeout(() => this.groups[6][pot] = this.selectTeam(pot), 1400);
-            setTimeout(() => this.groups[7][pot] = this.selectTeam(pot), 1600);
+
+            let index = 0;
+
+            if (pot === "One") {
+                index = 0;
+            }
+            else if (pot === "Two") {
+                index = 1;
+            }
+            else if (pot === "Three") {
+                index = 2;
+            }
+            else if (pot === "Four") {
+                index = 3;
+            }
+
+            setTimeout(() => this.groups[0].teams[index][pot] = this.selectTeam(pot), 200);
+            setTimeout(() => this.groups[1].teams[index][pot] = this.selectTeam(pot), 400);
+            setTimeout(() => this.groups[2].teams[index][pot] = this.selectTeam(pot), 600);
+            setTimeout(() => this.groups[3].teams[index][pot] = this.selectTeam(pot), 800);
+            setTimeout(() => this.groups[4].teams[index][pot] = this.selectTeam(pot), 1000);
+            setTimeout(() => this.groups[5].teams[index][pot] = this.selectTeam(pot), 1200);
+            setTimeout(() => this.groups[6].teams[index][pot] = this.selectTeam(pot), 1400);
+            setTimeout(() => this.groups[7].teams[index][pot] = this.selectTeam(pot), 1600);
         },
         'selectTeam': function(pot) {
 
@@ -75,6 +91,8 @@ new Vue({
             let eligibleTeams = allPotTeams.filter(e => e.chosen == false);
             let drawnIndex = Math.floor(Math.random()*eligibleTeams.length);
             let drawnTeam = eligibleTeams[drawnIndex];
+
+            console.log(drawnTeam);
 
             for (let team of allPotTeams) {
                 if (team.name === drawnTeam.name) {
