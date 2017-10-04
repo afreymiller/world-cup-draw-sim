@@ -42,21 +42,40 @@ new Vue({
             setTimeout(() => this.groups[7][pot] = this.selectTeam(pot), 1600);
         },
         'selectTeam': function(pot) {
-            switch (pot) {
-                case "One":
-                    let allPotTeams = this.pots[0]['teams'];
-                    let eligibleTeams = allPotTeams.filter(e => e.chosen == false);
-                    console.log(eligibleTeams);
-                    return this.Pot1.splice(Math.floor(Math.random()*this.Pot1.length), 1);
-                case "Two":
-                    return this.Pot2.splice(Math.floor(Math.random()*this.Pot2.length), 1);
-                case "Three":
-                    return this.Pot3.splice(Math.floor(Math.random()*this.Pot3.length), 1);
-                case "Four":
-                    return this.Pot4.splice(Math.floor(Math.random()*this.Pot4.length), 1);
-                default:
-                    break;
+
+            /* There should be a more ES6 friendly way of doing the pot check */
+
+            let index;
+
+            if (pot === "One") {
+                index = 0;
             }
+            
+            else if (pot === "Two") {
+                index = 1;
+            }
+
+            else if (pot === "Three") {
+                index = 2;
+            }
+
+            else {
+                index = 3;
+            }
+
+            let allPotTeams = this.pots[index]['teams'];
+            let eligibleTeams = allPotTeams.filter(e => e.chosen == false);
+            let drawnIndex = Math.floor(Math.random()*eligibleTeams.length);
+            let drawnTeam = eligibleTeams[drawnIndex];
+
+            for (let team of allPotTeams) {
+                if (team.name === drawnTeam.name) {
+                    team.chosen = true;
+                }
+            }
+
+            return drawnTeam.name;
+
         },
         'teamIsChosen': function(team, index) {
             return true;
