@@ -29,13 +29,13 @@ new Vue({
                              {'name': "EGY", 'path': null, 'chosen': false}, {'name': "BUR", 'path': null, 'chosen': false}, 
                              {'name': "COL", 'path': null, 'chosen': false}, {'name': "IRE", 'path': null, 'chosen': false}]},
                   {"teams": [{'name': "CIV", 'path': null, 'chosen': false}, {'name': "CRC", 'path': null, 'chosen': false}, 
-                             {'name': "USA", 'path': null, 'chosen': false}, {'name': "AUS", 'path': null, 'chosen': false}, 
+                             {'name': "GRE", 'path': null, 'chosen': false}, {'name': "AUS", 'path': null, 'chosen': false}, 
                              {'name': "IRN", 'path': null, 'chosen': false}, {'name': "KOR", 'path': null, 'chosen': false}, 
                              {'name': "JPN", 'path': null, 'chosen': false}, {'name': "KSA", 'path': null, 'chosen': false}]},
                   {"teams": [{'name': "SWE", 'path': null, 'chosen': false}, {'name': "SER", 'path': null, 'chosen': false}, 
                              {'name': "DRC", 'path': null, 'chosen': false}, {'name': "SUI", 'path': null, 'chosen': false}, 
                              {'name': "NGA", 'path': null, 'chosen': false}, {'name': "ISL", 'path': null, 'chosen': false}, 
-                             {'name': "CRO", 'path': null, 'chosen': false}, {'name': "GRE", 'path': null, 'chosen': false}]}   
+                             {'name': "CRO", 'path': null, 'chosen': false}, {'name': "PAN", 'path': null, 'chosen': false}]}   
         ]
     },
     'methods': {
