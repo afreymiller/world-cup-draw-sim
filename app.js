@@ -56,14 +56,46 @@ new Vue({
                 index = 3;
             }
 
-            setTimeout(() => this.groups[0].teams[index][pot] = this.selectTeam(pot), 200);
-            setTimeout(() => this.groups[1].teams[index][pot] = this.selectTeam(pot), 400);
-            setTimeout(() => this.groups[2].teams[index][pot] = this.selectTeam(pot), 600);
-            setTimeout(() => this.groups[3].teams[index][pot] = this.selectTeam(pot), 800);
-            setTimeout(() => this.groups[4].teams[index][pot] = this.selectTeam(pot), 1000);
-            setTimeout(() => this.groups[5].teams[index][pot] = this.selectTeam(pot), 1200);
-            setTimeout(() => this.groups[6].teams[index][pot] = this.selectTeam(pot), 1400);
-            setTimeout(() => this.groups[7].teams[index][pot] = this.selectTeam(pot), 1600);
+            setTimeout(() => {
+                let teamChosen = this.selectTeam(pot);
+                this.groups[0].teams[index][pot] = teamChosen;
+                this.groups[0].teams[index]["url"] = teamChosen;
+            }, 200);
+            setTimeout(() => {
+                let teamChosen = this.selectTeam(pot);
+                this.groups[1].teams[index][pot] = teamChosen;
+                this.groups[1].teams[index]["url"] = teamChosen;
+            }, 400);
+            setTimeout(() => {
+                let teamChosen = this.selectTeam(pot);
+                this.groups[2].teams[index][pot] = teamChosen;
+                this.groups[2].teams[index]["url"] = teamChosen;
+            }, 600);
+            setTimeout(() => {
+                let teamChosen = this.selectTeam(pot);
+                this.groups[3].teams[index][pot] = teamChosen;
+                this.groups[3].teams[index]["url"] = teamChosen;
+            }, 800);
+            setTimeout(() => {
+                let teamChosen = this.selectTeam(pot);
+                this.groups[4].teams[index][pot] = teamChosen;
+                this.groups[4].teams[index]["url"] = teamChosen;
+            }, 1000);
+            setTimeout(() => {
+                let teamChosen = this.selectTeam(pot);
+                this.groups[5].teams[index][pot] = teamChosen;
+                this.groups[5].teams[index]["url"] = teamChosen;
+            }, 1200);
+            setTimeout(() => {
+                let teamChosen = this.selectTeam(pot);
+                this.groups[6].teams[index][pot] = teamChosen;
+                this.groups[6].teams[index]["url"] = teamChosen;
+            }, 1400);
+            setTimeout(() => {
+                let teamChosen = this.selectTeam(pot);
+                this.groups[7].teams[index][pot] = teamChosen;
+                this.groups[7].teams[index]["url"] = teamChosen;
+            }, 1600);
         },
         'selectTeam': function(pot) {
 
