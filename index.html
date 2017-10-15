@@ -8,11 +8,11 @@
     <div id="app">
         <div class="grid-container outline">
            <div class = "row">
-                <div class = "col-8 pots" v-for="(pot, index) in pots">
-                    <p>Pot {{index+1}}</p>
+                <div class = "col-8 pots" v-for="(pot, potIndex) in pots">
+                    <p>Pot {{potIndex+1}}</p>
                     <div class="div-table">
-                        <div class="div-table-col" v-for="team in pot.teams">
-                            <img :src="getImgPath(team.name)" class="flag-icon" v-bind:class="{'flag-chosen': teamIsChosen(team.name, index)}"></img>
+                        <div class="div-table-col" v-for="(team, teamIndex) in pot.teams">
+                            <img :src="getImgPath(team.name)" class="flag-icon" v-bind:class="{'flag-chosen': teamIsChosen(team.name, potIndex, teamIndex)}"></img>
                             <div class="div-table-col team-name">{{team.name}}</div>
                         </div>
                     </div>

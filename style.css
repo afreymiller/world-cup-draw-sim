@@ -5,6 +5,10 @@
     position: relative;
 }
 
+.flag-chosen {
+    opacity: 0.3;
+}
+
 .team-name {
     position: relative;
     text-align: center;

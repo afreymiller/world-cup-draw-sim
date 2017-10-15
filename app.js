@@ -124,8 +124,6 @@ new Vue({
             let drawnIndex = Math.floor(Math.random()*eligibleTeams.length);
             let drawnTeam = eligibleTeams[drawnIndex];
 
-            console.log(drawnTeam);
-
             for (let team of allPotTeams) {
                 if (team.name === drawnTeam.name) {
                     team.chosen = true;
@@ -135,8 +133,8 @@ new Vue({
             return drawnTeam.name;
 
         },
-        'teamIsChosen': function(team, index) {
-            return true;
+        'teamIsChosen': function(team, potIndex, teamIndex) {
+            return this.pots[potIndex]["teams"][teamIndex]["chosen"];
         },
         'buttonClick': function() {
             setTimeout(() => this.emptyPot("One"), 0);
