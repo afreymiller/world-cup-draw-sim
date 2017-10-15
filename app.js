@@ -142,10 +142,6 @@ new Vue({
             setTimeout(() => this.emptyPot("Three"), 3200);
             setTimeout(() => this.emptyPot("Four"), 4800);
 
-            this.Pot1 = ["GER", "ARG", "BRA", "POR", "SUI", "POL", "CHI", "RUS"],
-            this.Pot2 = ["DRC", "NGA", "CIV", "BUR", "EGP", "URU", "COL", "IRE"],
-            this.Pot3 = ["MEX", "CRC", "USA", "AUS", "IRN", "KOR", "JPN", "KSA"],
-            this.Pot4 = ["SWE", "SER", "ENG", "FRA", "ESP", "BEL", "CRO", "GRE"]
         },
         'getImgPath': function(team) {
             return 'img/' + team + '.jpg';
