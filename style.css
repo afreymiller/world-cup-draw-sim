@@ -1,6 +1,12 @@
 
 .flag-icon {
-    width: 60px;
+    width: 40px;
+    height: 24px;
+    position: relative;
+}
+
+.flag-b-icon {
+    width: 30px;
     height: 30px;
     position: relative;
 }
@@ -76,7 +82,7 @@
         /*-- our gutter -- */
         padding: 12px; 
         margin-left: 10%;
-        background-color: #FFDCDC;
+      /*  background-color: #FFDCDC; */
     }
 
     .col-1{ width: 6%; }
@@ -88,12 +94,12 @@
 
 
     .outline, .outline *{
-        outline: 1px solid #F6A1A1; 
+       /* outline: 1px solid #F6A1A1; */
     }
 
     /*-- some extra column content styling --*/
     [class*='col-'] > p {
-     background-color: #FFC2C2; 
+    /* background-color: #FFC2C2; */
      padding: 0;
      /*margin: 40px; */
      text-align: center; 
@@ -103,8 +109,8 @@
 .div-table {
   display: table;         
   width: auto;         
-  background-color: #eee;         
-  border: 1px solid #666666;         
+ /* background-color: #eee;    */     
+ /* border: 1px solid #666666; */
  /* border-spacing: 5px; */ /* cellspacing:poor IE support for  this */
 }
 .div-table-row {
@@ -118,5 +124,5 @@
   display: table-column;         
   width: 60px; 
   height: 20px;
-  background-color: #ccc;  
+ /* background-color: #ccc;  */
 }
