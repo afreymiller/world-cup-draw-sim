@@ -23,6 +23,7 @@
                         <div v-for="team in group.teams">
                             <div class = "col-1">
                                 <img :src="getImgPath(team.url)" class="flag-icon"></img>
+                                <div class="team-name">{{team.name}}</div>
                             </div>
                         </div>
                     </div>
