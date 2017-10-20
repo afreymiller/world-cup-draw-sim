@@ -20,18 +20,11 @@
                 </div>
                 <div class="col-4 groups">
                     <div v-for="group in groups">
-                        <div class = "col-1">
-                            <img :src="getImgPath(group.teams[0].url)" class="flag-icon"></img>
+                        <div v-for="team in group.teams">
+                            <div class = "col-1">
+                                <img :src="getImgPath(team.url)" class="flag-icon"></img>
+                            </div>
                         </div>
-                        <div class = "col-1">
-                            <img :src="getImgPath(group.teams[1].url)" class="flag-icon"></img>
-                        </div>
-                        <div class = "col-1">
-                            <img :src="getImgPath(group.teams[2].url)" class="flag-icon"></img>
-                        </div>
-                        <div class = "col-1">
-                            <img :src="getImgPath(group.teams[3].url)" class="flag-icon"></img>
-                        </div> 
                     </div>
                 </div> 
            </div>
