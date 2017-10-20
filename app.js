@@ -26,14 +26,14 @@ new Vue({
                              {'name': "BEL", 'path': null, 'chosen': false}, {'name': "RUS", 'path': null, 'chosen': false}]}, 
                   {"teams": [{'name': "ENG", 'path': null, 'chosen': false}, {'name': "ESP", 'path': null, 'chosen': false}, 
                              {'name': "MEX", 'path': null, 'chosen': false}, {'name': "URU", 'path': null, 'chosen': false}, 
-                             {'name': "EGY", 'path': null, 'chosen': false}, {'name': "BUR", 'path': null, 'chosen': false}, 
-                             {'name': "COL", 'path': null, 'chosen': false}, {'name': "IRE", 'path': null, 'chosen': false}]},
+                             {'name': "SUI", 'path': null, 'chosen': false}, {'name': "BUR", 'path': null, 'chosen': false}, 
+                             {'name': "COL", 'path': null, 'chosen': false}, {'name': "ITA", 'path': null, 'chosen': false}]},
                   {"teams": [{'name': "CIV", 'path': null, 'chosen': false}, {'name': "CRC", 'path': null, 'chosen': false}, 
                              {'name': "GRE", 'path': null, 'chosen': false}, {'name': "AUS", 'path': null, 'chosen': false}, 
                              {'name': "IRN", 'path': null, 'chosen': false}, {'name': "KOR", 'path': null, 'chosen': false}, 
                              {'name': "JPN", 'path': null, 'chosen': false}, {'name': "KSA", 'path': null, 'chosen': false}]},
-                  {"teams": [{'name': "SWE", 'path': null, 'chosen': false}, {'name': "SER", 'path': null, 'chosen': false}, 
-                             {'name': "DRC", 'path': null, 'chosen': false}, {'name': "SUI", 'path': null, 'chosen': false}, 
+                  {"teams": [{'name': "PER", 'path': null, 'chosen': false}, {'name': "SER", 'path': null, 'chosen': false}, 
+                             {'name': "DRC", 'path': null, 'chosen': false}, {'name': "EGY", 'path': null, 'chosen': false}, 
                              {'name': "NGA", 'path': null, 'chosen': false}, {'name': "ISL", 'path': null, 'chosen': false}, 
                              {'name': "CRO", 'path': null, 'chosen': false}, {'name': "PAN", 'path': null, 'chosen': false}]}   
         ]
