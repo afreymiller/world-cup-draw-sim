@@ -60,7 +60,6 @@ new Vue({
                 setTimeout(() => {
                     let teamChosen = this.selectTeam(pot);
                     
-                    this.groups[i].teams[index][pot] = teamChosen;
                     this.groups[i].teams[index]["url"] = teamChosen;
                     
                 }, 200*i + 200);
