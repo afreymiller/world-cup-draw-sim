@@ -9,7 +9,6 @@
         <div class="grid-container outline">
            <div class = "row">
                 <div class = "col-8 pots" v-for="(pot, potIndex) in pots">
-                    <p>Pot {{potIndex+1}}</p>
                     <div class="div-table">
                         <div class="div-table-col" v-for="(team, teamIndex) in pot.teams">
                             <img :src="getImgPath(team.name)" class="flag-icon" v-bind:class="{'flag-chosen': teamIsChosen(team.name, potIndex, teamIndex)}"></img>
@@ -18,18 +17,23 @@
                     </div>
                     <br>
                 </div>
-                <div class="col-4 groups">
-                    <div v-for="group in groups">
+           </div>
+           <br><br><br><br><br><br><br>
+           <br><br><br><br><br><br><br>
+           <button v-on:click="buttonClick" class="draw-button">Simulate Draw</button>
+           <br><br><br><br><br><br><br>
+           <div class = "row">
+             <div class="col-16 groups">
+                <div v-for="group in groups">
+                    <div class = "col-1">
                         <div v-for="team in group.teams">
-                            <div class = "col-1">
-                                <img :src="getImgPath(team.url)" class="flag-icon"></img>
-                                <div class="team-name">{{team.name}}</div>
-                            </div>
+                            <img :src="getImgPath(team.url)" class="flag-icon"></img>
+                            <div class="team-name">{{team.name}}</div>
                         </div>
                     </div>
                 </div> 
+            </div>
            </div>
-            <button v-on:click="buttonClick" class="draw-button">Simulate Draw</button>
         </div>
     </div> 
     <script src="app.js"></script> 
