@@ -11,6 +11,11 @@
     position: relative;
 }
 
+.logo {
+    height: 120px;
+    width: 80px;
+}
+
 .flag-chosen {
     opacity: 0.3;
 }
@@ -89,7 +94,7 @@
 
 
     .outline, .outline *{
-        outline: 1px solid #F6A1A1; 
+       /* outline: 1px solid #F6A1A1; */
     }
 
     /*-- some extra column content styling --*/
