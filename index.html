@@ -18,12 +18,12 @@
                     <br>
                 </div>
            </div>
-           <br><br><br><br><br><br><br>
-           <br><br><br><br><br><br><br>
-           <button v-on:click="buttonClick" class="draw-button">Simulate Draw</button>
-           <br><br><br><br><br><br><br>
            <div class = "row">
-             <div class="col-16 groups">
+               <button v-on:click="buttonClick" class="draw-button">Simulate Draw</button>
+            </div>
+           
+           <div class = "row">
+             <div class="col-8 groups">
                 <div v-for="group in groups">
                     <div class = "col-1">
                         <div v-for="team in group.teams">

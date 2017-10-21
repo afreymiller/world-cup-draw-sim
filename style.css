@@ -20,20 +20,15 @@
     text-align: center;
 }
 
-.pots {
-    position: relative;
-    right: 60px;
-}
-
+/*
 .groups {
     position: relative;
     bottom: 300px;
-}
+} 
+*/
 
-.draw-button {
-    position: relative;
-    bottom: 450px;
-    left: 60%;
+.pots {
+    background-color: #90EE90;
 }
 
 @media all and (max-width:800px){
@@ -80,12 +75,12 @@
         min-height: 1px; 
         width: 16.66%; 
         /*-- our gutter -- */
-        padding: 12px; 
+        padding: 6px; 
         margin-left: 3%;
       /*  background-color: #FFDCDC; */
     }
 
-    .col-1{ width: 6%; }
+    .col-1{ width: 5.5%; }
     .col-2{ width: 12.5%; }
     .col-4{ width: 25%; }
     .col-6{ width: 33.3%; }
