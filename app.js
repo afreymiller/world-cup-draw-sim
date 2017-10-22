@@ -3,7 +3,7 @@ new Vue({
     'data': {
 
         'groups': [
-            {'teams': [{'name': "A1", 'fed': null, 'final': '', 'url': ''}, 
+            {'teams': [{'name': "A1", 'fed': null, 'final': '', 'url': 'RUS'}, 
                        {'name': "A2", 'fed': null, 'final': '', 'url': ''},
                        {'name': "A3", 'fed': null, 'final': '', 'url': ''}, 
                        {'name': "A4", 'fed': null, 'final': '', 'url': ''}]},
@@ -36,14 +36,14 @@ new Vue({
                        {'name': "H3", 'fed': null, 'final': '', 'url': ''}, 
                        {'name': "H4", 'fed': null, 'final': '', 'url': ''}]},
         ],
-        'pots': [ {"teams": [{'name': "RUS", 'fed': 'UEFA', 'chosen': false, 'final': false}, 
+        'pots': [ {"teams": [{'name': "RUS", 'fed': 'UEFA', 'chosen': true, 'final': false}, 
                              {'name': "BRA", 'fed': 'CONMEBOL', 'chosen': false, 'final': false}, 
                              {'name': "BEL", 'fed': 'UEFA', 'chosen': false, 'final': false}, 
                              {'name': "GER", 'fed': 'UEFA', 'chosen': false, 'final': false}, 
                              {'name': "POL", 'fed': 'UEFA', 'chosen': false, 'final': false}, 
                              {'name': "POR", 'fed': 'UEFA', 'chosen': false, 'final': false}, 
                              {'name': "FRA", 'fed': 'UEFA', 'chosen': false, 'final': false}, 
-                             {'name': "ARG", 'fed': 'UEFA', 'chosen': false, 'final': false}]}, 
+                             {'name': "ARG", 'fed': 'CONMEBOL', 'chosen': false, 'final': false}]}, 
                   {"teams": [{'name': "MEX", 'fed': 'CONCACAF', 'chosen': false, 'final': false}, 
                              {'name': "ENG", 'fed': 'UEFA', 'chosen': false, 'final': false}, 
                              {'name': "ESP", 'fed': 'UEFA', 'chosen': false, 'final': false}, 
@@ -102,6 +102,7 @@ new Vue({
 
             if (pot === "One") {
                 index = 0;
+                groupIndex++;
             }
             
             else if (pot === "Two") {
