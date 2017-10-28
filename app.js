@@ -72,22 +72,6 @@ new Vue({
     },
     'methods': {
         'emptyPot': function(pot) {
-
-            let index = 0;
-
-            if (pot === "One") {
-                index = 0;
-            }
-            else if (pot === "Two") {
-                index = 1;
-            }
-            else if (pot === "Three") {
-                index = 2;
-            }
-            else if (pot === "Four") {
-                index = 3;
-            }
-
             for (let i = 0; i < 8; i++) {
                 setTimeout(() => {
                     this.selectTeam(pot, i);
@@ -98,28 +82,13 @@ new Vue({
 
             /* There should be a more ES6 friendly way of doing the pot check */
 
-            let index;
-
-            if (pot === "One") {
-                index = 0;
+            if (pot === 0) {
                 groupIndex++;
-            }
-            
-            else if (pot === "Two") {
-                index = 1;
-            }
-
-            else if (pot === "Three") {
-                index = 2;
-            }
-
-            else {
-                index = 3;
             }
 
             let canAddTeam = false;
             let drawnTeam = null;
-            let allPotTeams = this.pots[index]['teams'];
+            let allPotTeams = this.pots[pot]['teams'];
             let eligibleTeams = allPotTeams.filter(e => e.chosen == false);
 
             while (!canAddTeam) {
@@ -127,12 +96,12 @@ new Vue({
                 let drawnIndex = Math.floor(Math.random()*eligibleTeams.length);
                 drawnTeam = eligibleTeams[drawnIndex];
 
-                this.groups[groupIndex].teams[index].fed = drawnTeam.fed;
+                this.groups[groupIndex].teams[pot].fed = drawnTeam.fed;
 
                 canAddTeam = this.groupIsValid(this.groups[groupIndex]);
             }
 
-            this.groups[groupIndex].teams[index]["url"] = drawnTeam.name;
+            this.groups[groupIndex].teams[pot]["url"] = drawnTeam.name;
             
            // console.log(drawnTeam.name + " added to Group " + groupIndex + " spot " + index);
 
@@ -168,10 +137,10 @@ new Vue({
             return this.pots[potIndex]["teams"][teamIndex]["chosen"];
         },
         'buttonClick': function() {
-            setTimeout(() => this.emptyPot("One"), 0);
-            setTimeout(() => this.emptyPot("Two"), 10000);
-            setTimeout(() => this.emptyPot("Three"), 20000);
-            setTimeout(() => this.emptyPot("Four"), 30000);
+            setTimeout(() => this.emptyPot(0), 0);
+            setTimeout(() => this.emptyPot(1), 10000);
+            setTimeout(() => this.emptyPot(2), 20000);
+            setTimeout(() => this.emptyPot(3), 30000);
 
         },
         'getImgPath': function(team) {
