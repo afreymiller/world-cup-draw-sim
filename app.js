@@ -3,7 +3,7 @@ new Vue({
     'data': {
 
         'groups': [
-            {'teams': [{'name': "A1", 'fed': null, 'final': '', 'url': 'RUS'}, 
+            {'teams': [{'name': "A1", 'fed': 'UEFA', 'final': '', 'url': 'RUS'}, 
                        {'name': "A2", 'fed': null, 'final': '', 'url': ''},
                        {'name': "A3", 'fed': null, 'final': '', 'url': ''}, 
                        {'name': "A4", 'fed': null, 'final': '', 'url': ''}]},
@@ -78,9 +78,11 @@ new Vue({
                 }, 1000*i + 200);
             }
         },
+        'getAllEligibleTeams': function(pot, groupIndex, fed) {
+            let gp_dist = {"A": 0, "B": 0, "C": 0, "D": 0, "E": 0, "F": 0, "G": 0, "H": 0};
+            const eligibleTeams = allPotTeams.filter(e => e.chosen == false);
+        },
         'selectTeam': function(pot, groupIndex) {
-
-            /* There should be a more ES6 friendly way of doing the pot check */
 
             if (pot === 0) {
                 groupIndex++;
@@ -89,6 +91,8 @@ new Vue({
             let canAddTeam = false;
             let drawnTeam = null;
             let allPotTeams = this.pots[pot]['teams'];
+
+            /* This is where I need to find out how to get only eligible teams that won't cause an issue */
             let eligibleTeams = allPotTeams.filter(e => e.chosen == false);
 
             while (!canAddTeam) {
