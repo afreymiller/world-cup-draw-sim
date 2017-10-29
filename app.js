@@ -78,9 +78,45 @@ new Vue({
                 }, 1000*i + 200);
             }
         },
-        'getAllEligibleTeams': function(pot, groupIndex, fed) {
-            let gp_dist = {"A": 0, "B": 0, "C": 0, "D": 0, "E": 0, "F": 0, "G": 0, "H": 0};
-            const eligibleTeams = allPotTeams.filter(e => e.chosen == false);
+        'teamInGroupIsValid': function(team, group) {
+            const UEFA = group.filter(e => e.fed === "UEFA").length;
+            const CONCACAF = group.filter(e => e.fed === "CONCACAF").length;
+            const CAF = group.filter(e => e.fed === "CAF").length;
+            const AFC = group.filter(e => e.fed === "AFC").length;
+            const CONMEBOL = group.filter(e => e.fed === "CONMEBOL").length;
+
+            if (team.fed === "UEFA") {
+                return UEFA < 2;
+            }
+            else if (team.fed === "CONCACAF") {
+                return CONCACAF < 1;
+            }
+            else if (team.fed === "CAF") {
+                return CAF < 1;
+            }
+            else if (team.fed === "AFC") {
+                return AFC < 1;
+            }
+            else {
+                return CONMEBOL < 1;
+            }
+        },
+        'getAllEligibleTeams': function(pot, groupIndex) {
+
+            let allPotTeams = this.pots[pot]['teams'];
+            let eligibleTeams = allPotTeams.filter(e => e.chosen === false);
+
+            if (pot === 0) {
+                return eligibleTeams;
+            }
+        
+            else {
+                const group = this.groups[groupIndex].teams;
+                eligibleTeams = eligibleTeams.filter(e => this.teamInGroupIsValid(e, group) === true);
+                // at this point we want to filter on all of the bad selections that will cause a bad draw */
+                return eligibleTeams;
+            }
+            
         },
         'selectTeam': function(pot, groupIndex) {
 
@@ -92,22 +128,14 @@ new Vue({
             let drawnTeam = null;
             let allPotTeams = this.pots[pot]['teams'];
 
-            /* This is where I need to find out how to get only eligible teams that won't cause an issue */
-            let eligibleTeams = allPotTeams.filter(e => e.chosen == false);
+            /* Just pull up all eligible teams */
+            const eligibleTeams = this.getAllEligibleTeams(pot, groupIndex);
+            const randIndex = Math.floor(Math.random() * eligibleTeams.length);
 
-            while (!canAddTeam) {
-                
-                let drawnIndex = Math.floor(Math.random()*eligibleTeams.length);
-                drawnTeam = eligibleTeams[drawnIndex];
-
-                this.groups[groupIndex].teams[pot].fed = drawnTeam.fed;
-
-                canAddTeam = this.groupIsValid(this.groups[groupIndex]);
-            }
+            drawnTeam = eligibleTeams[randIndex];
 
             this.groups[groupIndex].teams[pot]["url"] = drawnTeam.name;
-            
-           // console.log(drawnTeam.name + " added to Group " + groupIndex + " spot " + index);
+            this.groups[groupIndex].teams[pot]["fed"] = drawnTeam.fed;
 
             for (let team of allPotTeams) {
                 if (team.name === drawnTeam.name) {
@@ -116,27 +144,7 @@ new Vue({
             }
 
         },
-        'groupIsValid': function(group) {
-            const DIST = {"UEFA": 0, "CAF": 0, "AFC": 0, "CONMEBOL": 0, "CONCACAF": 0};
-         
-            for (let team of group.teams) {
-                const federation = team.fed; 
-                DIST[federation] += 1;
-            };
 
-            return (DIST.UEFA <= 2 && DIST.CAF <= 1 && DIST.AFC <= 1 && DIST.CONMEBOL <= 1 && DIST.CONCACAF <= 1);
-        },
-
-        'distributionIsValid': function() {
-            let isValid = true;
-
-            for (let group of this.groups) {
-                isValid = isValid && this.groupIsValid(group);
-            }
-
-            alert(isValid);
-            return isValid;
-        },
         'teamIsChosen': function(team, potIndex, teamIndex) {
             return this.pots[potIndex]["teams"][teamIndex]["chosen"];
         },
