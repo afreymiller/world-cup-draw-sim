@@ -101,19 +101,70 @@ new Vue({
                 return CONMEBOL < 1;
             }
         },
+        'federationMustBeChosenNow': function(fed, teamsToDraw, groupIndex) {
+            const groupsToFill = teamsToDraw.length;
+            let fedCount = 0;
+            let groupsWithFedTeam = 0;
+            for (let team of teamsToDraw) {
+                if (team.fed === fed) {
+                    fedCount++;
+                }
+            }
+            for (let i = groupIndex; i < 8; i++){
+                let euroCount = 0;
+                for (let j = 0; j < 4; j++) {
+                    if (this.groups[i].teams[j].fed === fed) {
+                        if (fed === "UEFA") {
+                            euroCount++;
+                            if (euroCount === 2) {
+                                groupsWithFedTeam++;
+                                break;
+                            }
+                        }
+                        else {
+                            groupsWithFedTeam++;
+                        }
+                    }
+                }
+            }
+
+            return ((groupsToFill - fedCount) <= groupsWithFedTeam);
+            
+        },
         'getAllEligibleTeams': function(pot, groupIndex) {
 
             let allPotTeams = this.pots[pot]['teams'];
-            let eligibleTeams = allPotTeams.filter(e => e.chosen === false);
+            let originalTeams = allPotTeams.filter(e => e.chosen === false);
 
             if (pot === 0) {
-                return eligibleTeams;
+                return originalTeams;
             }
         
             else {
                 const group = this.groups[groupIndex].teams;
-                eligibleTeams = eligibleTeams.filter(e => this.teamInGroupIsValid(e, group) === true);
-                // at this point we want to filter on all of the bad selections that will cause a bad draw */
+                let eligibleTeams = originalTeams.filter(e => this.teamInGroupIsValid(e, group) === true);
+
+                let blockerFederation = null;
+
+                let federationsInPot = [];
+
+                for (let team of eligibleTeams) {
+                    if (federationsInPot.indexOf(team.fed) === -1) {
+                        federationsInPot.push(team.fed);
+                    }
+                }
+
+                for (let i = 0; i < federationsInPot.length; i++) {
+                    if (this.federationMustBeChosenNow(federationsInPot[i], originalTeams, groupIndex)) {
+                        blockerFederation = federationsInPot[i];
+                        break;
+                    }
+                }
+
+                if (!!blockerFederation) {
+                    eligibleTeams = eligibleTeams.filter(e => e.fed === blockerFederation);
+                }
+
                 return eligibleTeams;
             }
             
