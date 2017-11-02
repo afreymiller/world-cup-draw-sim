@@ -75,7 +75,7 @@ new Vue({
             for (let i = 0; i < 8; i++) {
                 setTimeout(() => {
                     this.selectTeam(pot, i);
-                }, 1000*i + 200);
+                }, 500*i + 200);
             }
         },
         'teamInGroupIsValid': function(team, group) {
@@ -191,6 +191,7 @@ new Vue({
             for (let team of allPotTeams) {
                 if (team.name === drawnTeam.name) {
                     team.chosen = true;
+                    break;
                 }
             }
 
@@ -201,9 +202,9 @@ new Vue({
         },
         'buttonClick': function() {
             setTimeout(() => this.emptyPot(0), 0);
-            setTimeout(() => this.emptyPot(1), 10000);
-            setTimeout(() => this.emptyPot(2), 20000);
-            setTimeout(() => this.emptyPot(3), 30000);
+            setTimeout(() => this.emptyPot(1), 4250);
+            setTimeout(() => this.emptyPot(2), 8500);
+            setTimeout(() => this.emptyPot(3), 12750);
 
         },
         'getImgPath': function(team) {
