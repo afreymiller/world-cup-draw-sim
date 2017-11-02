@@ -79,27 +79,9 @@ new Vue({
             }
         },
         'teamInGroupIsValid': function(team, group) {
-            const UEFA = group.filter(e => e.fed === "UEFA").length;
-            const CONCACAF = group.filter(e => e.fed === "CONCACAF").length;
-            const CAF = group.filter(e => e.fed === "CAF").length;
-            const AFC = group.filter(e => e.fed === "AFC").length;
-            const CONMEBOL = group.filter(e => e.fed === "CONMEBOL").length;
-
-            if (team.fed === "UEFA") {
-                return UEFA < 2;
-            }
-            else if (team.fed === "CONCACAF") {
-                return CONCACAF < 1;
-            }
-            else if (team.fed === "CAF") {
-                return CAF < 1;
-            }
-            else if (team.fed === "AFC") {
-                return AFC < 1;
-            }
-            else {
-                return CONMEBOL < 1;
-            }
+            const currCount = group.filter(e => e.fed === team.fed).length;
+            const limits = {"UEFA": 2, "CONCACAF": 1, "CAF": 1, "AFC": 1, "CONMEBOL": 1};
+            return limits[team.fed] > currCount;
         },
         'federationMustBeChosenNow': function(fed, teamsToDraw, groupIndex) {
             const groupsToFill = teamsToDraw.length;
@@ -143,9 +125,7 @@ new Vue({
             else {
                 const group = this.groups[groupIndex].teams;
                 let eligibleTeams = originalTeams.filter(e => this.teamInGroupIsValid(e, group) === true);
-
                 let blockerFederation = null;
-
                 let federationsInPot = [];
 
                 for (let team of eligibleTeams) {
@@ -178,7 +158,6 @@ new Vue({
             /* Just pull up all eligible teams */
             const eligibleTeams = this.getAllEligibleTeams(pot, groupIndex);
             const randIndex = Math.floor(Math.random() * eligibleTeams.length);
-
             const drawnTeam = eligibleTeams[randIndex];
 
             this.groups[groupIndex].teams[pot]["url"] = drawnTeam.name;
