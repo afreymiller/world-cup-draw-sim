@@ -175,18 +175,16 @@ new Vue({
                 groupIndex++;
             }
 
-            let canAddTeam = false;
-            let drawnTeam = null;
-            let allPotTeams = this.pots[pot]['teams'];
-
             /* Just pull up all eligible teams */
             const eligibleTeams = this.getAllEligibleTeams(pot, groupIndex);
             const randIndex = Math.floor(Math.random() * eligibleTeams.length);
 
-            drawnTeam = eligibleTeams[randIndex];
+            const drawnTeam = eligibleTeams[randIndex];
 
             this.groups[groupIndex].teams[pot]["url"] = drawnTeam.name;
             this.groups[groupIndex].teams[pot]["fed"] = drawnTeam.fed;
+
+            const allPotTeams = this.pots[pot]['teams'];
 
             for (let team of allPotTeams) {
                 if (team.name === drawnTeam.name) {
