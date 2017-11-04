@@ -1,0 +1,16 @@
+{
+  "name": "world-cup-draw-sim",
+  "version": "1.0.0",
+  "description": "A World Cup 2018 draw simulation written in VueJS.",
+  "main": "app.js",
+  "repository": "git@github.com:afreymiller/world-cup-draw-sim.git",
+  "author": "Adam Freymiller <afreymiller10@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "express": "^4.16.2"
+  }, 
+  "scripts": {
+    "start": "node app.js"
+  }
+}
