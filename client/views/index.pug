@@ -17,7 +17,7 @@ html
            div(class = "row")
                div(class = "col-3")
                img(src='img/logo.png' class='logo' v-on:click="buttonClick")
-               p {{days}} {{hours}} {{minutes}} {{seconds}}
+               h2 {{days}} : {{hours}} : {{minutes}} : {{seconds}}
            br
            div(class = "row")
              div(class="col-8 pots")
@@ -25,7 +25,10 @@ html
                     div(class = "col-1")
                         div(v-for="team in group.teams")
                             img(:src="getImgPath(team.url)" class="group-flag-icon")
-                            div(class="group-team-name") {{team.name}}          
+                            div(class="group-team-name") {{team.name}}  
+    p Created by #[a(href="https://www.github.com/afreymiller") afreymiller] 
+
     script(src="js/app.js")
+
 
      
