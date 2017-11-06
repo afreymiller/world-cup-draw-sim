@@ -1,9 +1,24 @@
 
-.flag-icon {
+.group-flag-icon {
     width: 40px;
     height: 24px;
+    margin-left: 20px;
     border-radius: 3px;
     position: relative;
+}
+
+.pot-flag-icon {
+    width: 40px;
+    height: 24px;
+    margin-left: 55px;
+    border-radius: 3px;
+    position: relative;
+}
+
+.pot-team-name {
+    position: relative;
+    text-align: center;
+    margin-left: 45px;
 }
 
 .logo {
@@ -15,10 +30,12 @@
     opacity: 0.3;
 }
 
-.team-name {
+.group-team-name {
     position: relative;
     text-align: center;
 }
+
+
 
 .pots {
     background-color: #90EE90;

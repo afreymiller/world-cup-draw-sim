@@ -10,21 +10,22 @@ html
                 div(class = "col-8 pots" v-for="(pot, potIndex) in pots")
                     div(class="div-table")
                         div(class="div-table-col" v-for="(team, teamIndex) in pot.teams")
-                            img(:src="getImgPath(team.name)" class="flag-icon" v-bind:class="{'flag-chosen': teamIsChosen(team.name, potIndex, teamIndex)}")
-                            div(class="div-table-col team-name") {{team.name}}
+                            img(:src="getImgPath(team.name)" class="pot-flag-icon" v-bind:class="{'flag-chosen': teamIsChosen(team.name, potIndex, teamIndex)}")
+                            div(class="div-table-col pot-team-name") {{team.name}}
                     br   
            br
            div(class = "row")
                div(class = "col-3")
                img(src='img/logo.png' class='logo' v-on:click="buttonClick")
-          
+               p {{days}} {{hours}} {{minutes}} {{seconds}}
            br
            div(class = "row")
              div(class="col-8 pots")
                 div(v-for="group in groups")
                     div(class = "col-1")
                         div(v-for="team in group.teams")
-                            img(:src="getImgPath(team.url)" class="flag-icon")
-                            div(class="team-name") {{team.name}}          
+                            img(:src="getImgPath(team.url)" class="group-flag-icon")
+                            div(class="group-team-name") {{team.name}}          
     script(src="js/app.js")
+
      

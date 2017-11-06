@@ -9,7 +9,8 @@
   "private": false,
   "dependencies": {
     "express": "^4.16.2",
-    "pug": "^2.0.0-rc.4"
+    "pug": "^2.0.0-rc.4",
+    "vuejs-countdown": "^0.1.0"
   },
   "scripts": {
     "start": "node app.js"

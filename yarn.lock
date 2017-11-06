@@ -596,6 +596,10 @@ void-elements@^2.0.1:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/void-elements/-/void-elements-2.0.1.tgz#c066afb582bb1cb4128d60ea92392e94d5e9dbec"
 
+vuejs-countdown@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/vuejs-countdown/-/vuejs-countdown-0.1.0.tgz#6349ceea54ae04d608ffd8a076aa12f5c82da78a"
+
 window-size@0.1.0:
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/window-size/-/window-size-0.1.0.tgz#5438cd2ea93b202efa3a19fe8887aee7c94f9c9d"
