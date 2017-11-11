@@ -22,8 +22,9 @@
 }
 
 .logo {
-    height: 120px;
-    width: 80px;
+    height: 100px;
+    width: 70px;
+    position: relative;
 }
 
 .flag-chosen {
@@ -35,7 +36,10 @@
     text-align: center;
 }
 
-
+.countdown {
+    position: relative;
+    margin-left: 200px;
+}
 
 .pots {
     background-color: #90EE90;

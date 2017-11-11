@@ -13,12 +13,11 @@ html
                             img(:src="getImgPath(team.name)" class="pot-flag-icon" v-bind:class="{'flag-chosen': teamIsChosen(team.name, potIndex, teamIndex)}")
                             div(class="div-table-col pot-team-name") {{team.name}}
                     br   
-           br
            div(class = "row")
                div(class = "col-3")
-               img(src='img/logo.png' class='logo' v-on:click="buttonClick")
-               h2 {{days}} : {{hours}} : {{minutes}} : {{seconds}}
-           br
+               h4(class = "countdown") {{days}} : {{hours}} : {{minutes}} : {{seconds}}
+               img(src='img/logo.png' class='logo')
+               button(v-on:click="buttonClick") Simulate draw
            div(class = "row")
              div(class="col-8 pots")
                 div(v-for="group in groups")
