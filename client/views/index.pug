@@ -17,7 +17,8 @@ html
                div(class = "col-3")
                h4(class = "countdown") {{days}} : {{hours}} : {{minutes}} : {{seconds}}
                img(src='img/logo.png' class='logo')
-               button(v-on:click="buttonClick") Simulate draw
+               button(v-on:click="buttonClick") Simulate Draw
+           br
            div(class = "row")
              div(class="col-8 pots")
                 div(v-for="group in groups")

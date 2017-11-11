@@ -10,7 +10,7 @@
 .pot-flag-icon {
     width: 40px;
     height: 24px;
-    margin-left: 55px;
+    margin-left: 45px;
     border-radius: 3px;
     position: relative;
 }
@@ -18,13 +18,20 @@
 .pot-team-name {
     position: relative;
     text-align: center;
-    margin-left: 45px;
+    margin-left: 35px;
 }
 
 .logo {
-    height: 100px;
-    width: 70px;
+    height: 90px;
+    width: 60px;
+    bottom: 20px;
+    left: 280px;
     position: relative;
+}
+
+button {
+    position: relative;
+    left: 200px;
 }
 
 .flag-chosen {
@@ -33,12 +40,14 @@
 
 .group-team-name {
     position: relative;
+    left: 20px;
     text-align: center;
 }
 
 .countdown {
     position: relative;
-    margin-left: 200px;
+    left: 250px;
+    bottom: 10px;
 }
 
 .pots {
