@@ -7,6 +7,33 @@
     position: relative;
 }
 
+.hideLogo {
+    display: none;
+}
+
+.loader {
+  position: relative;
+  left: 200px;
+  border: 8px solid #C0C0C0;
+  border-radius: 50%;
+  border-top: 8px solid red;
+  border-bottom: 8px solid red;
+  width: 60px;
+  height: 60px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
 .pot-flag-icon {
     width: 40px;
     height: 24px;

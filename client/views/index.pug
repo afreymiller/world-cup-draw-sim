@@ -1,5 +1,6 @@
 html
   head
+    link(rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css")
     link(rel = "stylesheet" type = "text/css" href = "css/style.css")
     script(src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.10/vue.min.js")
     script(src="https://cdnjs.cloudflare.com/ajax/libs/vuex/2.1.1/vuex.min.js")
@@ -16,8 +17,9 @@ html
            div(class = "row")
                div(class = "col-3")
                h4(class = "countdown") {{days}} : {{hours}} : {{minutes}} : {{seconds}}
-               img(src='img/logo.png' class='logo')
-               button(v-on:click="buttonClick") Simulate Draw
+               img(src='img/logo.png' v-bind:class="!showLoader ? 'logo' : 'hideLogo'")
+               div(v-bind:class="showLoader ? 'loader' : ''")
+               button(v-on:click="buttonClick" class="w3-button w3-indigo w3-round" v-bind:disabled="showLoader") Simulate Draw
            br
            div(class = "row")
              div(class="col-8 pots")

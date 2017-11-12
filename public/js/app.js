@@ -1,6 +1,7 @@
 new Vue({
     'el': '#app',
     'data': {
+        showLoader: false,
         date: (new Date(2017, 11, 1)),
                 diff: null,
                 now: null,
@@ -185,6 +186,8 @@ new Vue({
         },
         'buttonClick': function() {
 
+            this.showLoader = true;
+
             this.groups = [
             {'teams': [{'name': "A1", 'fed': 'UEFA', 'url': 'RUS'}, 
                        {'name': "A2", 'fed': null, 'url': ''},
@@ -259,6 +262,7 @@ new Vue({
             setTimeout(() => this.emptyPot(1), 4250);
             setTimeout(() => this.emptyPot(2), 8500);
             setTimeout(() => this.emptyPot(3), 12750);
+            setTimeout(() => this.showLoader = false, 17000);
 
         },
         'getImgPath': function(team) {
