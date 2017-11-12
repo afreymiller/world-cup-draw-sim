@@ -2,9 +2,15 @@
 .group-flag-icon {
     width: 40px;
     height: 24px;
-    margin-left: 20px;
+    left: 10px;
     border-radius: 3px;
     position: relative;
+    margin-bottom: 2px;
+}
+
+.group-col {
+    position: relative;
+    margin-right: 15px;
 }
 
 .hideLogo {
@@ -13,7 +19,8 @@
 
 .loader {
   position: relative;
-  left: 200px;
+  left: 300px;
+  bottom: 15px;
   border: 8px solid #C0C0C0;
   border-radius: 50%;
   border-top: 8px solid red;
@@ -38,6 +45,7 @@
     width: 40px;
     height: 24px;
     margin-left: 45px;
+    margin-bottom: 2px;
     border-radius: 3px;
     position: relative;
 }
@@ -52,13 +60,13 @@
     height: 90px;
     width: 60px;
     bottom: 20px;
-    left: 280px;
+    left: 300px;
     position: relative;
 }
 
 button {
     position: relative;
-    left: 200px;
+    left: 260px;
 }
 
 .flag-chosen {
@@ -68,12 +76,13 @@ button {
 .group-team-name {
     position: relative;
     left: 20px;
+    margin-bottom: 5px;
     text-align: center;
 }
 
 .countdown {
     position: relative;
-    left: 250px;
+    left: 30px;
     bottom: 10px;
 }
 
