@@ -13,6 +13,17 @@
     margin-right: 15px;
 }
 
+.group-row {
+    position: relative;
+    bottom: 10px;
+}
+
+.github-link {
+    position: relative;
+    bottom: 25px;
+    left: 40px;
+}
+
 .hideLogo {
     display: none;
 }

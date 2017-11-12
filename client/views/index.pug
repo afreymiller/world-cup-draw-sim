@@ -21,14 +21,14 @@ html
                 div(v-bind:class="showLoader ? 'loader' : ''")
                 button(v-on:click="buttonClick" class="w3-button w3-indigo w3-round" v-bind:disabled="showLoader") Simulate Draw
             br
-            div(class = "row")
+            div(class = "row group-row")
                 div(class="col-8 pots")
                     div(v-for="group in groups")
                         div(class = "col-1 group-col")
                             div(v-for="team in group.teams")
                                 img(:src="getImgPath(team.url)" class="group-flag-icon")
                                 div(class="group-team-name") {{team.name}}  
-    p Created by #[a(href="https://www.github.com/afreymiller") afreymiller] 
+    p(class="github-link") Created by #[a(href="https://www.github.com/afreymiller") afreymiller] 
 
     script(src="js/app.js")
 
