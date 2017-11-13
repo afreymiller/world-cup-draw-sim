@@ -72,7 +72,7 @@ new Vue({
                              {'name': "PAN", 'fed': 'CONCACAF', 'chosen': false}, 
                              {'name': "JPN", 'fed': 'AFC', 'chosen': false}, 
                              {'name': "AUS", 'fed': 'AFC', 'chosen': false}, 
-                             {'name': "CIV", 'fed': 'CAF', 'chosen': false}, 
+                             {'name': "MAR", 'fed': 'CAF', 'chosen': false}, 
                              {'name': "SER", 'fed': 'UEFA', 'chosen': false}, 
                              {'name': "TUN", 'fed': 'CAF', 'chosen': false}]}   
         ]
@@ -252,7 +252,7 @@ new Vue({
                              {'name': "PAN", 'fed': 'CONCACAF', 'chosen': false}, 
                              {'name': "JPN", 'fed': 'AFC', 'chosen': false}, 
                              {'name': "AUS", 'fed': 'AFC', 'chosen': false}, 
-                             {'name': "CIV", 'fed': 'CAF', 'chosen': false}, 
+                             {'name': "MAR", 'fed': 'CAF', 'chosen': false}, 
                              {'name': "SER", 'fed': 'UEFA', 'chosen': false}, 
                              {'name': "TUN", 'fed': 'CAF', 'chosen': false}]}   
         ];
